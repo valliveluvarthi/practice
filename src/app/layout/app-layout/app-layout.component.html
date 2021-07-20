@@ -1,0 +1,17 @@
+<div class="parent-container">
+    <div class="flexitems">
+        <router-outlet></router-outlet>
+    </div>
+    <div *ngIf="this.router.url === '/userlogin'" class="support-content">
+        <div class="scontent">Support</div>
+        <div class="scontent">Contact</div>
+        <div class="scontent">Privacy</div>
+        <div class="scontent">Terms</div>
+    </div>
+    <div class="footer">
+        <div class="fcontent">© 2021 Cognitive Business. All rights reserved.</div>
+        <div class="fcontent">Cognitive.business</div>
+    </div>
+    <!-- © 2021 Cognitive Business. All rights reserved.Cognitive.business -->
+    
+</div>
