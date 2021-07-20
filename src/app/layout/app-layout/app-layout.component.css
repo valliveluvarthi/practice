@@ -1,12 +1,8 @@
 .parent-container{
     height: 1120px;
     background: #474747;
-    width: 1792px;
-    height: 1120px;
     padding-top: 290px;
-    padding-left: 696px;
-    padding-right: 696px;
-    padding-bottom: 326px;
+    padding-left: 600px;
 }
 .flexitems{
     display: flex;
@@ -44,7 +40,7 @@
     justify-content: center;
     width: 495px;
     letter-spacing: 1px;
-    padding-top: 15%;
+    padding-top: 30%;
 }
 .fcontent{
     padding: 1%;
