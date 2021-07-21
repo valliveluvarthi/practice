@@ -16,7 +16,7 @@ export class AppLayoutComponent implements OnInit {
     
   ngOnInit() {
     this.year = new Date().getFullYear();
-    this.router.navigateByUrl('userlogin');
+    this.router.navigateByUrl('forgotpassword');
   }
   
  

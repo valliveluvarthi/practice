@@ -13,19 +13,18 @@ export class ForgotpasswordComponent implements OnInit {
 
   constructor(private router: Router,
     private formBuilder: FormBuilder,) {
-
   }
 
   ngOnInit() {
     this.forgotForm = this.formBuilder.group({
       email: new FormControl('', Validators.email)
     });
-    this.forgotForm.controls.email.setValue(localStorage.getItem('useremail'));
   }
   navigateTo(){
     this.router.navigateByUrl('userlogin');
   }
   onSubmit(){
+    localStorage.setItem('useremail',this.forgotForm.controls.email.value);
     this.router.navigateByUrl('recoverpassword');
   }
 }
