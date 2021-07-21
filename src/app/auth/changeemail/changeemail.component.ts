@@ -23,6 +23,7 @@ export class ChangeemailComponent implements OnInit {
   navTo() {
     if (this.passwdForm.controls.npassword.value !== "" && this.passwdForm.controls.cpassword.value !== "") {
       if (this.passwdForm.controls.npassword.value === this.passwdForm.controls.cpassword.value) {
+        localStorage.removeItem("useremail");
         this.router.navigateByUrl(this.routeConstants.user_login);
       }
     }
