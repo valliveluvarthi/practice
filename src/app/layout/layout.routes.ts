@@ -1,8 +1,8 @@
 import { AppLayoutComponent } from './app-layout/app-layout.component';
-import { UserloginComponent } from '../shared/userlogin/userlogin.component'
-import {ForgotpasswordComponent} from '../shared/forgotpassword/forgotpassword.component';
-import {RecoverpasswordComponent} from '../shared/recoverpassword/recoverpassword.component';
-import {ChangeemailComponent} from '../shared/changeemail/changeemail.component';
+import { UserloginComponent } from '../auth/userlogin/userlogin.component'
+import {ForgotpasswordComponent} from '../auth/forgotpassword/forgotpassword.component';
+import {RecoverpasswordComponent} from '../auth/recoverpassword/recoverpassword.component';
+import {ChangeemailComponent} from '../auth/changeemail/changeemail.component';
 export const LAYOUT_ROUTES = [
   {
     path: '',

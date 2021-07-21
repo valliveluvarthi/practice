@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import {RouteConstants} from '../../layout/route-constants';
+import { RouteConstants } from '../../layout/route-constants';
 @Component({
   selector: 'app-forgotpassword',
   templateUrl: './forgotpassword.component.html',
@@ -9,22 +9,25 @@ import {RouteConstants} from '../../layout/route-constants';
 })
 export class ForgotpasswordComponent implements OnInit {
 
-  forgotForm: FormGroup;
+  remailForm: FormGroup;
 
   constructor(private router: Router,
-    private formBuilder: FormBuilder, public routeConstants : RouteConstants) {
+    private formBuilder: FormBuilder, public routeConstants: RouteConstants) {
   }
 
   ngOnInit() {
-    this.forgotForm = this.formBuilder.group({
+    this.remailForm = this.formBuilder.group({
       email: new FormControl('', Validators.email)
     });
+    this.remailForm.controls.email.setValue("");
   }
-  navigateTo(){
+  navigateTo() {
     this.router.navigateByUrl(this.routeConstants.user_login);
   }
-  onSubmit(){
-    localStorage.setItem('useremail',this.forgotForm.controls.email.value);
-    this.router.navigateByUrl(this.routeConstants.recover_password);
+  onSubmit() {
+    if (this.remailForm.controls.email.status === "VALID" && this.remailForm.controls.email.value !== "") {
+      localStorage.setItem('useremail', this.remailForm.controls.email.value);
+      this.router.navigateByUrl(this.routeConstants.recover_password);
+    }
   }
 }
