@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import {RouteConstants} from '../../layout/route-constants';
 @Component({
   selector: 'app-changeemail',
   templateUrl: './changeemail.component.html',
@@ -12,7 +12,7 @@ export class ChangeemailComponent implements OnInit {
   passwdForm: FormGroup;
 
   constructor(private router: Router,
-    private formBuilder: FormBuilder,) { }
+    private formBuilder: FormBuilder, public routeConstants : RouteConstants) { }
 
   ngOnInit() {
     this.passwdForm = this.formBuilder.group({
@@ -23,7 +23,7 @@ export class ChangeemailComponent implements OnInit {
   navTo() {
     if (this.passwdForm.controls.npassword.value !== "" && this.passwdForm.controls.cpassword.value !== "") {
       if (this.passwdForm.controls.npassword.value === this.passwdForm.controls.cpassword.value) {
-        this.router.navigateByUrl('userlogin');
+        this.router.navigateByUrl(this.routeConstants.user_login);
       }
     }
   }

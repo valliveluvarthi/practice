@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import {RouteConstants} from '../../layout/route-constants';
 @Component({
   selector: 'app-userlogin',
   templateUrl: './userlogin.component.html',
@@ -11,7 +12,7 @@ export class UserloginComponent implements OnInit {
   forgotForm: FormGroup;
 
   constructor(private router: Router,
-    private formBuilder: FormBuilder,) {
+    private formBuilder: FormBuilder, public routeConstants : RouteConstants,) {
 
   }
 
@@ -23,7 +24,7 @@ export class UserloginComponent implements OnInit {
   }
   navigateTo() {
     if (this.forgotForm.controls.email.status === "VALID" && this.forgotForm.controls.email.value !== "") {
-      this.router.navigateByUrl('forgotpassword');
+      this.router.navigateByUrl(this.routeConstants.forgot_password);
     }
   }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Router} from '@angular/router';
-
+import { RouteConstants } from '../route-constants';
 
 @Component({
   selector: 'app-app-layout',
@@ -10,13 +10,13 @@ import { Router} from '@angular/router';
 export class AppLayoutComponent implements OnInit {
   year: number;
 
-  constructor(public router: Router,) {
+  constructor(public router: Router,public routeConstants: RouteConstants) {
  
   }
     
   ngOnInit() {
     this.year = new Date().getFullYear();
-    this.router.navigateByUrl('changeemail');
+    this.router.navigateByUrl(this.routeConstants.user_login);
   }
   
  

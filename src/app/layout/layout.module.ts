@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {SharedModule} from '../shared/shared.module';
+import {RouteConstants} from './route-constants';
 @NgModule({
   declarations: [
     AppLayoutComponent,
@@ -28,6 +29,6 @@ import {SharedModule} from '../shared/shared.module';
     MatInputModule,
   ],
   entryComponents: [],
-  providers: []
+  providers: [RouteConstants]
 })
 export class LayoutModule { }
