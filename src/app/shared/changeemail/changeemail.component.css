@@ -1,80 +1,91 @@
 .logo{
-    align-items: center;
-    width: 197px;
-    height: 56px;
+    position: static;
+    width: 38%;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 56px;
     color: #DEDEDE;
-    margin: 16px 100px;
+    margin-left: 33%;
 }
 .reset-passwd{
-    align-items: center;
-    width: 147px;
-    height: 24px;
+    width: 30%;
+    position: static;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     letter-spacing: 0.15px;
     color: #EBEBEB;
-    margin: 16px 125px;
+    flex-grow: 0;
+    margin-top: 6%;
+    margin-left: 37%;
 }
 .npasswd{
-    align-self: flex-start;
-    width: 115px;
-    height: 16px;
-    padding-top: 40px;
+    position: static;
+    width: 50%;
+    padding-top: 8%;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 16px;
     letter-spacing: 0.4px;
     color: #A3A3A3;
-    margin: 0px 4px;
+    margin-left: 6%;
+}
+.cpasswd{
+    position: static;
+    width: 50%;
+    padding-top: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #A3A3A3;
+    margin-left: 6%;
 }
 .form{
+    position: static;
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
-    padding: 6px 0px;
-    width: 385px;
-    height: 32px;
+    width: 80%;
     background: #3D3D3D;
-    box-shadow: inset 0px -1px 0px #A3A3A3;
+    color: #EBEBEB;
+    /* box-shadow: inset 0px -1px 0px #a3a3a3; */
+    flex: none;
     align-self: stretch;
-    margin: 0px 0px;
+    flex-grow: 0;
+    margin-left: 6%;
 }
 .formfield{
-    width: 230px;
-    height: 20px;
+    position: static;
+    width: 100%;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;
     letter-spacing: 0.25px;
     color: #EBEBEB;
-    margin: 0px 1px;
 }
 .mat-form-field{
-    width: 385px;
+    position: static;
+    width: 100%;
 }
 .submitbtn{
-    padding: 10px 17px; 
-    width: 82px;
-    height: 20px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 1%;
+    width: 15%;
     background: #1F1F1F;
     border-radius: 4px;
+    margin-left: 69%;
     color: #E0E0E0;
-    font-size: 21px;
-    letter-spacing: 1.15px;
+    font-size: 19px;
+    letter-spacing: 0.15px;
     cursor: pointer;
-    margin-left: 65%;
-    padding: 5%;
-    text-align: center;
 }
 .btn-div{
-    margin-top: 15%;
+    margin-top: 2%;
 }

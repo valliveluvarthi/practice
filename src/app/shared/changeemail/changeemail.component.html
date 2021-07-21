@@ -3,19 +3,15 @@
     <div class="reset-passwd">Reset Password</div>
     <div class="npasswd">New Password</div>
     <div class="form" [formGroup]="passwdForm">
-        <div class="formfield">
-            <mat-form-field class="mat-form-field">
-                <input matInput type="password" formControlName="npassword">
-            </mat-form-field>
-        </div>
+        <mat-form-field class="mat-form-field">
+            <input matInput type="password" formControlName="npassword">
+        </mat-form-field>
     </div>
-    <div class="npasswd">Confirm Password</div>
+    <div class="cpasswd">Confirm Password</div>
     <div class="form" [formGroup]="passwdForm">
-        <div class="formfield">
-            <mat-form-field class="mat-form-field">
-                <input matInput type="password" formControlName="cpassword">
-            </mat-form-field>
-        </div>
+        <mat-form-field class="mat-form-field">
+            <input matInput type="password" formControlName="cpassword">
+        </mat-form-field>
     </div>
     <div class="btn-div">
         <div class="submitbtn" (click)="navTo()">Submit</div>
