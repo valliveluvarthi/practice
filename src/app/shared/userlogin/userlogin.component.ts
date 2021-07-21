@@ -20,12 +20,9 @@ export class UserloginComponent implements OnInit {
       email: new FormControl('', Validators.email),
       password: new FormControl('')
     });
-    this.forgotForm.controls.email.setValue("valli.veluvarthi@marutitech.com")
-    this.forgotForm.controls.password.setValue("password")
   }
   navigateTo() {
     if (this.forgotForm.controls.email.status === "VALID" && this.forgotForm.controls.email.value !== "") {
-      localStorage.setItem('useremail', 'valli.veluvarthi@marutitech.com');
       this.router.navigateByUrl('forgotpassword');
     }
   }
