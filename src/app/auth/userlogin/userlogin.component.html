@@ -3,13 +3,13 @@
     <div class="user-login">User login</div>
     <div class="eaddress">Email Address</div>
     <div class="form" [formGroup]="forgotForm">
-        <mat-form-field class="mat-form-field">
+        <mat-form-field [ngClass]="(this.forgotForm.controls.email.valid) ? 'mat-form-field valid-class' : 'mat-form-field err-class'">
             <input matInput type="email" formControlName="email">
         </mat-form-field>
     </div>
     <div class="password">Password</div>
     <div class="form" [formGroup]="forgotForm">
-        <mat-form-field class="mat-form-field">
+        <mat-form-field class="mat-form-field passwrd-class">
             <input matInput type="password" formControlName="password">
         </mat-form-field>
     </div>
