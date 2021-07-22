@@ -1,14 +1,12 @@
 .logo{
     position: static;
-    width: 38%;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     color: #DEDEDE;
-    margin-left: 33%;
+    text-align: center;
 }
 .reset-passwd{
-    width: 30%;
     position: static;
     font-style: normal;
     font-weight: 500;
@@ -16,13 +14,12 @@
     letter-spacing: 0.15px;
     color: #EBEBEB;
     flex-grow: 0;
-    margin-top: 6%;
-    margin-left: 37%;
+    margin-top: 7%;
+    text-align: center;
 }
 .npasswd{
     position: static;
-    width: 50%;
-    padding-top: 8%;
+    padding-top: 10%;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -32,8 +29,7 @@
 }
 .cpasswd{
     position: static;
-    width: 50%;
-    padding-top: 4%;
+    padding-top: 6%;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -47,23 +43,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 80%;
     background: #3D3D3D;
     color: #EBEBEB;
-    /* box-shadow: inset 0px -1px 0px #a3a3a3; */
     flex: none;
     align-self: stretch;
     flex-grow: 0;
     margin-left: 6%;
-}
-.formfield{
-    position: static;
-    width: 100%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.25px;
-    color: #EBEBEB;
 }
 .mat-form-field{
     position: static;
@@ -76,14 +61,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2% 1%;
-    width: 15%;
+    padding: 3% 3%;
     background: #1F1F1F;
     border-radius: 4px;
-    margin-left: 69%;
+    margin-left: 75%;
     color: #E0E0E0;
-    font-size: 19px;
-    letter-spacing: 0.15px;
+    font-size: 15px;
+    letter-spacing: 0.1px;
     cursor: pointer;
 }
 .btn-div{

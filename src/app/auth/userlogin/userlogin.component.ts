@@ -23,9 +23,7 @@ export class UserloginComponent implements OnInit {
     });
   }
   navigateTo() {
-    if (this.forgotForm.controls.email.status === "VALID" && this.forgotForm.controls.email.value !== "") {
       this.router.navigateByUrl(this.routeConstants.forgot_password);
-    }
   }
 
 }
