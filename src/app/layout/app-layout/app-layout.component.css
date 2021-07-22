@@ -15,8 +15,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin: auto;
     margin-top: 8%;
-    margin-left: 36%;
 }
 .support-content{
     background: #474747;
