@@ -73,11 +73,10 @@
 .btn-div{
     margin-top: 2%;
 }
-mat-form-field ::ng-deep .mat-form-field-underline {
+.passwrd-class ::ng-deep .mat-form-field-underline {
     height: 1px;
-    background-color: transparent;
-    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
 }
-mat-form-field ::ng-deep .mat-form-field-underline .mat-form-field-ripple{
-        width: 0%;
+.passwrd-class ::ng-deep .mat-form-field-ripple{
+    background-color: #ffffff !important;
 }

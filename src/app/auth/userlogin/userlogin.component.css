@@ -86,28 +86,26 @@
     letter-spacing: 0.1px;
     cursor: pointer;
 }
-
+.valid-class ::ng-deep .mat-form-field-ripple{
+    background-color: #ffffff !important;
+}
 .valid-class ::ng-deep .mat-form-field-underline {
     height: 1px;
-    background-color: transparent;
-    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
 }
-.valid-class ::ng-deep .mat-form-field-underline .mat-form-field-ripple{
-        width: 0%;
-}
+
 .err-class ::ng-deep .mat-form-field-underline {
     height: 1px;
-    background-color: transparent;
-    border-bottom: 1px solid #f00909;
+    background-color: #f70606;
 }
-.err-class ::ng-deep .mat-form-field-underline .mat-form-field-ripple{
-        width: 0%;
+.err-class ::ng-deep .mat-form-field-ripple{
+    background-color: #f70606 !important;
 }
+
 .passwrd-class ::ng-deep .mat-form-field-underline {
     height: 1px;
-    background-color: transparent;
-    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
 }
-.passwrd-class ::ng-deep .mat-form-field-underline .mat-form-field-ripple{
-        width: 0%;
+.passwrd-class ::ng-deep .mat-form-field-ripple{
+    background-color: #ffffff !important;
 }
