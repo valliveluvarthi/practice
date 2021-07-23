@@ -59,26 +59,29 @@
 
 
 .valid-class ::ng-deep .mat-form-field-ripple{
+    height: 1px;
     background-color: #ffffff !important;
 }
 .valid-class ::ng-deep .mat-form-field-underline {
-    height: 1px;
+    height: 0.2px;
     background-color: #ffffff;
 }
 
 .err-class ::ng-deep .mat-form-field-underline {
-    height: 1px;
+    height: 0.2px;
     background-color: #f70606;
 }
 .err-class ::ng-deep .mat-form-field-ripple{
+    height: 1px;
     background-color: #f70606 !important;
 }
 
 .passwrd-class ::ng-deep .mat-form-field-underline {
-    height: 1px;
+    height: 0.2px;
     background-color: #ffffff;
 }
 .passwrd-class ::ng-deep .mat-form-field-ripple{
+    height: 1px;
     background-color: #ffffff !important;
 }
 .btnrw{
@@ -102,4 +105,7 @@
     background: #1F1F1F;
     border-radius: 4px;
     cursor: pointer;
+}
+input{
+    caret-color: #ffffff;
 }

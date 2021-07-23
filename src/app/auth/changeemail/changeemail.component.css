@@ -70,9 +70,13 @@
     justify-content: flex-end;
 }
 .passwrd-class ::ng-deep .mat-form-field-underline {
-    height: 1px;
+    height: 0.2px;
     background-color: #ffffff;
 }
 .passwrd-class ::ng-deep .mat-form-field-ripple{
+    height: 1px;
     background-color: #ffffff !important;
+}
+input{
+    caret-color: #ffffff;
 }
