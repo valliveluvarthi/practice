@@ -3,7 +3,8 @@
     <div class="user-login">User login</div>
     <div class="eaddress">Email Address</div>
     <div class="form" [formGroup]="forgotForm">
-        <mat-form-field [ngClass]="(this.forgotForm.controls.email.valid) ? 'mat-form-field valid-class' : 'mat-form-field err-class'">
+        <mat-form-field
+            [ngClass]="(this.forgotForm.controls.email.valid) ? 'mat-form-field valid-class' : 'mat-form-field err-class'">
             <input matInput type="email" formControlName="email">
         </mat-form-field>
     </div>
@@ -13,12 +14,8 @@
             <input matInput type="password" formControlName="password">
         </mat-form-field>
     </div>
-    <div class="btnrow">
+    <div class="btnrw">
         <div class="frgttext"><a (click)="navigateTo()">Forgot password?</a></div>
-        <div class="sign-div">
-            <div class="signbtn">
-                Sign In
-            </div>
-        </div>
+        <div class="signbtn">Sign In</div>
     </div>
 </div>
