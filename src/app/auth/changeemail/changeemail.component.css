@@ -56,22 +56,18 @@
 }
 .submitbtn{
     position: static;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 3%;
+    color: #E0E0E0;
+    padding: 3% 6%;
     background: #1F1F1F;
     border-radius: 4px;
-    margin-left: 75%;
-    color: #E0E0E0;
-    font-size: 15px;
-    letter-spacing: 0.1px;
     cursor: pointer;
 }
 .btn-div{
     margin-top: 2%;
+    position: static;
+    display: flex;
+    justify-content: flex-end;
 }
 .passwrd-class ::ng-deep .mat-form-field-underline {
     height: 1px;

@@ -57,22 +57,7 @@
     margin-top: 4%;
 }
 
-.frgttext{
-    position: static;
-    color: #A3A3A3;
-    align-self: center;
-    cursor: pointer;
-    margin-left: 6%;
-}
 
-.signbtn{
-    position: static;
-    flex-wrap: wrap;
-    color: #E0E0E0;
-    padding: 3% 6%;
-    background: #1F1F1F;
-    border-radius: 4px;
-}
 .valid-class ::ng-deep .mat-form-field-ripple{
     background-color: #ffffff !important;
 }
@@ -101,4 +86,20 @@
     display: flex;
     justify-content: space-between;
     padding-top: 4%;
+}
+.frgttext{
+    position: static;
+    color: #A3A3A3;
+    align-self: center;
+    cursor: pointer;
+    margin-left: 6%;
+}
+.signbtn{
+    position: static;
+    flex-wrap: wrap;
+    color: #E0E0E0;
+    padding: 3% 6%;
+    background: #1F1F1F;
+    border-radius: 4px;
+    cursor: pointer;
 }
