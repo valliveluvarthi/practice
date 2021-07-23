@@ -70,21 +70,23 @@
     cursor: pointer;
     margin-left: 6%;
 }
-.signbtn{
+.sign-div{
     position: static;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 6%;
-    background: #1F1F1F;
-    border-radius: 4px;
-    margin-left: 32%;
     color: #E0E0E0;
     font-size: 15px;
     letter-spacing: 0.1px;
     cursor: pointer;
+    align-items: center;
+    width: 58%;
+    justify-content: flex-end;
+}
+.signbtn{
+    padding: 3% 6%;
+    background: #1F1F1F;
+    border-radius: 4px;
 }
 .valid-class ::ng-deep .mat-form-field-ripple{
     background-color: #ffffff !important;
