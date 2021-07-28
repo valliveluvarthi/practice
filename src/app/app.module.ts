@@ -8,9 +8,14 @@ import { RouterModule } from '@angular/router';
 import {LayoutModule} from './layout/layout.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './dashboard/home/home.component';
+import { ContactsComponent } from './dashboard/contacts/contacts.component';
+import {AppBootstrapModule} from './app-bootstrap.module';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       scrollPositionRestoration: 'enabled'
    }),
     BrowserAnimationsModule,
+    AppBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

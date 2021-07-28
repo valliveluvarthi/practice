@@ -3,4 +3,6 @@ export class RouteConstants {
    forgot_password = "forgotpassword";
    recover_password = "recoverpassword";
    change_email = "changeemail";
+   dashboard = "dashboard";
+   contacts = "dashboard/contacts";
   }

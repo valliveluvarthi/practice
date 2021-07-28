@@ -25,5 +25,7 @@ export class UserloginComponent implements OnInit {
   navigateTo() {
       this.router.navigateByUrl(this.routeConstants.forgot_password);
   }
-
+  onSignIn(){
+    this.router.navigateByUrl(this.routeConstants.dashboard);
+  }
 }

@@ -3,6 +3,7 @@ import { UserloginComponent } from '../auth/userlogin/userlogin.component'
 import {ForgotpasswordComponent} from '../auth/forgotpassword/forgotpassword.component';
 import {RecoverpasswordComponent} from '../auth/recoverpassword/recoverpassword.component';
 import {ChangeemailComponent} from '../auth/changeemail/changeemail.component';
+import { DASHBOARD_ROUTES } from '../dashboard/dashboard.routes';
 export const LAYOUT_ROUTES = [
   {
     path: '',
@@ -26,5 +27,9 @@ export const LAYOUT_ROUTES = [
       }
     ]
   },
+  {
+    path : "dashboard",
+    children : DASHBOARD_ROUTES
+  }
   
 ];
