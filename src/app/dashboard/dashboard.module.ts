@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [HomeComponent,ContactsComponent],
   imports: [
@@ -16,6 +17,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatIconModule
   ],
   entryComponents: [
     

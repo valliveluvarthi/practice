@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './dashboard/home/home.component';
 import { ContactsComponent } from './dashboard/contacts/contacts.component';
 import {AppBootstrapModule} from './app-bootstrap.module';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import {AppBootstrapModule} from './app-bootstrap.module';
       scrollPositionRestoration: 'enabled'
    }),
     BrowserAnimationsModule,
-    AppBootstrapModule
+    AppBootstrapModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

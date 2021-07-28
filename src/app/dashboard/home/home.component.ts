@@ -9,13 +9,18 @@ import { RouteConstants } from 'src/app/layout/route-constants';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router: Router,public routeConstants: RouteConstants) {
- 
+  constructor(public router: Router, public routeConstants: RouteConstants) {
+
   }
 
   ngOnInit(): void {
   }
-  onClick(){
-    this.router.navigateByUrl(this.routeConstants.contacts);
+  btnClick() {
+    let btn = document.querySelector("#btn");
+    var sidebar = document.querySelector(".sidebar");
+     if(sidebar != null){
+      sidebar.classList.toggle("active");
+     }
   }
+  
 }
