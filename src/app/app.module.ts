@@ -12,11 +12,19 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { ContactsComponent } from './dashboard/contacts/contacts.component';
 import {AppBootstrapModule} from './app-bootstrap.module';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {FieldToDisplayPipe} from './dashboard/field-to-display.pipe';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddContactModule } from './dashboard/contacts/addcontact/addcontact.module';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactsComponent,
+    FieldToDisplayPipe
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,13 @@ import { MatIconModule } from '@angular/material/icon';
    }),
     BrowserAnimationsModule,
     AppBootstrapModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatTableModule,
+    MatCheckboxModule,
+    HttpClientModule,
+    MatDialogModule,
+    AddContactModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

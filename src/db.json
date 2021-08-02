@@ -1,0 +1,164 @@
+{
+  "contacts": [
+    {
+      "full_name": "Mike Huston",
+      "short_name": "MH",
+      "role": "Product Manager @ Fulcrum management",
+      "email": "mikehuston@gmail.com",
+      "phno": "8856384563",
+      "company": "No information provided",
+      "address": "47 north Florida",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "short_name": "FH",
+      "full_name": "Filler Huston",
+      "role": "Product Manager @ maruti management",
+      "email": "fillerhuston@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "27 east Alabama"
+    },
+    {
+      "id": 3,
+      "short_name": "VV",
+      "full_name": "Vang Vougue",
+      "role": "Sales Manager @ maruti management",
+      "email": "vv@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "27 east Alabama"
+    },
+    {
+      "id": 4,
+      "short_name": "AV",
+      "full_name": "Ankur Vyas",
+      "role": "Team Lead @ maruti management",
+      "email": "av@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 5,
+      "short_name": "PS",
+      "full_name": "Pallavi Sethia",
+      "role": "HR @ maruti management",
+      "email": "ps@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 6,
+      "short_name": "HS",
+      "full_name": "Himanshu",
+      "role": "HR @ maruti management",
+      "email": "hs@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 7,
+      "short_name": "SA",
+      "full_name": "Sagar",
+      "role": "developer@ maruti management",
+      "email": "ss@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 8,
+      "short_name": "LK",
+      "full_name": "Lakshmi",
+      "role": "developer@ maruti management",
+      "email": "lk@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 9,
+      "short_name": "MD",
+      "full_name": "Madhu",
+      "role": "developer@ maruti management",
+      "email": "md@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "id": 10,
+      "short_name": "SS",
+      "full_name": "Sarvani",
+      "role": "developer@ maruti management",
+      "email": "ss@gmail.com",
+      "phno": "+(069)238-4587",
+      "company": "No information provided",
+      "address": "Ahmedabad"
+    },
+    {
+      "full_name": "Valli veluvarthi",
+      "short_name": "VV",
+      "role": "Developer",
+      "email": "valli@gmail.com",
+      "phno": "456-455-4645",
+      "company": "Maruti",
+      "address": "address",
+      "id": 11
+    },
+    {
+      "full_name": "Srinivas",
+      "short_name": "S",
+      "role": "Developer",
+      "email": "sr@gmail.com",
+      "phno": "(234)657-8478",
+      "company": "Maruti",
+      "address": "address",
+      "id": 12
+    },
+    {
+      "full_name": "Ram",
+      "short_name": "R",
+      "role": "Developer",
+      "email": "ram@gmail.com",
+      "phno": "6384653653",
+      "company": "Maruti",
+      "address": "address",
+      "id": 13
+    },
+    {
+      "full_name": "Ram srinivas",
+      "short_name": "RS",
+      "role": "Production manager",
+      "email": "rs@gmail.com",
+      "phno": "8658588585",
+      "company": "Maruti",
+      "address": "address",
+      "id": 14
+    },
+    {
+      "full_name": "Partha",
+      "short_name": "P",
+      "role": "HR",
+      "email": "partha@gmail.com",
+      "phno": "7684756248",
+      "company": "Maruti",
+      "address": "address",
+      "id": 15
+    },
+    {
+      "full_name": "Sushmitha Simmala",
+      "short_name": "SS",
+      "role": "Developer",
+      "email": "ss@gmail.com",
+      "phno": "7568376583",
+      "company": "Accenture",
+      "address": "address",
+      "id": 16
+    }
+  ]
+}

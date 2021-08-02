@@ -8,8 +8,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {FieldToDisplayPipe} from './field-to-display.pipe';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatCardModule} from '@angular/material/card';
+import { DashboardService } from './dashboard.service';
+import { AddcontactComponent } from './contacts/addcontact/addcontact.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
-  declarations: [HomeComponent,ContactsComponent],
+  declarations: [HomeComponent,ContactsComponent,FieldToDisplayPipe, AddcontactComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -17,7 +28,14 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatDialogModule,
   ],
   entryComponents: [
     
@@ -30,5 +48,6 @@ import { MatIconModule } from '@angular/material/icon';
     ReactiveFormsModule,
     MatFormFieldModule,
   ],
+  providers : [DashboardService]
 })
 export class DashboardModule { }

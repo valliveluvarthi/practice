@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding:auto;
+    position: relative;
+}
+.wrapper-header{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding:auto;
+    justify-content: space-between;
+}
+.mat-form-field{
+    position: static;
+    width: 100%;
+}
+.bx-window-close{
+    font-size: 3rem;
+}
+.btn-default{
+    float: right;
+}

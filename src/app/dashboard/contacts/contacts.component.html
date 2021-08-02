@@ -1,1 +1,96 @@
-<p>contacts works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3
+        col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1
+        contact-header">
+            <div class="contact-logo">
+                <i class='bx bxs-contact'></i>
+            </div>
+            <div class="header-div">
+                <h4 class="header">Contacts</h4>
+                <div>
+                    <h6 class="sub-header-tag">Welcome to FULCRUM Contact page</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-row">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search contacts" id="search">
+            <button type="submit" class="searchButton" (click)="filterBy()">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div>
+            <button class="btn btn-md-default" (click)="onAddContact('row','Add',0)">
+                <i class='bx bx-plus'></i> &nbsp; Add Contact
+            </button>
+        </div>
+    </div>
+    <div class="content-flex">
+        <div [ngClass]="(data?.length <= 7)?'content-column-1-without-flex':'content-column-1'">
+            <table [ngClass]="(data?.length <= 7)?'table':'table-scroll'">
+                <tr>
+                    <th>+</th>
+                    <th class="basic-info-header" style="padding-left: 7%;">Basic info</th>
+                    <th class="company-header">Company</th>
+                    <th class="edit-header">Edit</th>
+                </tr>
+                <ng-container *ngFor="let row of data; let i = index">
+                    <tr class="content-list" (click)="onRowClick(i)">
+                            <td>
+                                <input type="checkbox" name="" id="check-box">
+                            </td>
+                            <td>
+                                <div class="basic-info-content">
+                                    <div class="circle">{{row.short_name}}</div>
+                                    <div class="name-email-div">
+                                        <div>
+                                            {{row.full_name}}
+                                        </div>
+                                        <div class="email">
+                                            {{row.email}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>{{row.company}}</td>
+                            <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
+                    </tr>
+                </ng-container>
+            </table>
+        </div>
+
+        <div class="content-column-2">
+            <div class="contact-details">
+                <div>
+                    <div class="contact-details-circle">{{arr_on_row_click?.short_name}}</div>
+                    <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
+                    <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
+                </div>
+            </div>
+            <div class="contact-details-keys">
+                <div class="contact-details-div contact-details-full-name">
+                    <div class="contact-details-subdiv-1">Full name:</div>
+                    <div class="contact-details-subdiv-2">{{arr_on_row_click?.full_name}}</div>
+                </div>
+                <div class="contact-details-div contact-details-email">
+                    <div class="contact-details-subdiv-1">Email:</div>
+                    <div class="contact-details-subdiv-2">{{arr_on_row_click?.email}}</div>
+                </div>
+                <div class="contact-details-div contact-details-phone">
+                    <div class="contact-details-subdiv-1">Phone:</div>
+                    <div class="contact-details-subdiv-2">{{arr_on_row_click?.phno}}</div>
+                </div>
+                <div class="contact-details-div contact-details-company">
+                    <div class="contact-details-subdiv-1">Company:</div>
+                    <div class="contact-details-subdiv-2">{{arr_on_row_click?.company}}</div>
+                </div>
+                <div class="contact-details-div contact-details-address">
+                    <div class="contact-details-subdiv-1">Address:</div>
+                    <div class="contact-details-subdiv-2">{{arr_on_row_click?.address}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

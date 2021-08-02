@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="wrapper-header">
+        <div><h2>{{data.type}} Contact</h2></div>
+        <div (click)="onCancel()"><i class='bx bx-window-close'></i></div>
+    </div>
+    <div [formGroup]="modalForm">
+        <div class="full-name">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="text" formControlName="full_name" placeholder="Full Name">
+            </mat-form-field>
+        </div>
+        <div class="role">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="text" formControlName="role" placeholder="Role">
+            </mat-form-field>
+        </div>
+        <div class="email">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="email" formControlName="email" placeholder="Email">
+            </mat-form-field>
+        </div>
+        <div class="phno">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="text"  maxlength="10" formControlName="phno" placeholder="Pnone Number">
+            </mat-form-field>
+        </div>
+        <div class="company">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="text" formControlName="company" placeholder="Company">
+            </mat-form-field>
+        </div>
+        <div class="address">
+            <mat-form-field class="mat-form-field">
+                <input matInput type="text" formControlName="address" placeholder="Address">
+            </mat-form-field>
+        </div>
+        <div class="btn btn-default" (click)="onSubmit()">
+            Submit
+        </div>
+    </div>
+</div>
