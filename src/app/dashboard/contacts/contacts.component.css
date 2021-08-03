@@ -79,6 +79,10 @@
     border: none;
     margin-left: 15%;
 }
+.btn:focus{
+  border: none;
+  text-decoration: none;
+}
 .content-flex{
     display: flex;
     flex-direction: row;
@@ -120,7 +124,6 @@
     font-size: 18px;
     color: #fff;
     text-align: center;
-    background: #000;
     line-height: 5rem;
 }
 .table{
@@ -210,9 +213,8 @@ table tr td input{
     height: 7rem;
     border-radius: 50%;
     font-size: 18px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
-    background: #000;
     line-height: 7rem;
     margin: 10% auto;
   }

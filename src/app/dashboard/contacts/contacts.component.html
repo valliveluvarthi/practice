@@ -43,7 +43,7 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle">{{row.short_name}}</div>
+                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -64,7 +64,7 @@
         <div class="content-column-2">
             <div class="contact-details">
                 <div>
-                    <div class="contact-details-circle">{{arr_on_row_click?.short_name}}</div>
+                    <div class="contact-details-circle" id="contact-circle">{{getContactShortName(arr_on_row_click?.short_name)}}</div>
                     <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                     <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                 </div>
