@@ -7,31 +7,37 @@
         <div class="full-name">
             <mat-form-field class="mat-form-field">
                 <input matInput type="text" formControlName="full_name" placeholder="Full Name">
+                <mat-error *ngIf="modalForm.controls.full_name.value === ''">Please enter Full Name.</mat-error>
             </mat-form-field>
         </div>
         <div class="role">
             <mat-form-field class="mat-form-field">
                 <input matInput type="text" formControlName="role" placeholder="Role">
+                <mat-error *ngIf="modalForm.controls.role.value === ''">Please enter Role.</mat-error>
             </mat-form-field>
         </div>
         <div class="email">
             <mat-form-field class="mat-form-field">
                 <input matInput type="email" formControlName="email" placeholder="Email">
+                <mat-error *ngIf="modalForm.controls.email.value === ''">Please enter email.</mat-error>
             </mat-form-field>
         </div>
         <div class="phno">
             <mat-form-field class="mat-form-field">
                 <input matInput type="text"  maxlength="10" formControlName="phno" placeholder="Pnone Number">
+                <mat-error *ngIf="modalForm.controls.phno.value === ''">Please enter pnone number.</mat-error>
             </mat-form-field>
         </div>
         <div class="company">
             <mat-form-field class="mat-form-field">
                 <input matInput type="text" formControlName="company" placeholder="Company">
+                <mat-error *ngIf="modalForm.controls.company.value === ''">Please enter company.</mat-error>
             </mat-form-field>
         </div>
         <div class="address">
             <mat-form-field class="mat-form-field">
                 <input matInput type="text" formControlName="address" placeholder="Address">
+                <mat-error *ngIf="modalForm.controls.address.value === ''">Please enter address.</mat-error>
             </mat-form-field>
         </div>
         <div class="btn btn-default" (click)="onSubmit()">

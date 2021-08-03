@@ -3,6 +3,7 @@ import { Inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DashboardService } from '../../dashboard.service';
 @Component({
   selector: 'app-addcontact',
@@ -17,6 +18,7 @@ export class AddcontactComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
     private formBuilder: FormBuilder,
     public dashboardService : DashboardService,
+    public snackbar : MatSnackBar,
     ) {
       console.log(data)
      }
@@ -70,12 +72,18 @@ export class AddcontactComponent implements OnInit {
         this.dashboardService.postContacts(obj).subscribe((result: any) => {
           this.dialogRef.close();
           this.modalForm.reset();
+          this.snackbar.open("Contact added successfully!", "", {
+            duration: 1000,
+          });
         });
       }
       if(this.data.type === "Edit")
       this.dashboardService.updateContacts(obj,this.data.row.id).subscribe((result: any) => {
         this.dialogRef.close();
         this.modalForm.reset();
+        this.snackbar.open("Contact updates successfully!", "", {
+          duration: 1000,
+        });
       });
     }
   }

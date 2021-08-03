@@ -18,7 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import { DashboardService } from './dashboard.service';
 import { AddcontactComponent } from './contacts/addcontact/addcontact.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [HomeComponent,ContactsComponent,FieldToDisplayPipe, AddcontactComponent],
   imports: [
@@ -36,6 +36,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCheckboxModule,
     MatCardModule,
     MatDialogModule,
+    MatSnackBarModule
   ],
   entryComponents: [
     

@@ -5,20 +5,20 @@
       "short_name": "MH",
       "role": "Product Manager @ Fulcrum management",
       "email": "mikehuston@gmail.com",
-      "phno": "8856384563",
+      "phno": "0976867467",
       "company": "No information provided",
       "address": "47 north Florida",
       "id": 1
     },
     {
-      "id": 2,
-      "short_name": "FH",
       "full_name": "Filler Huston",
+      "short_name": "FH",
       "role": "Product Manager @ maruti management",
       "email": "fillerhuston@gmail.com",
-      "phno": "+(069)238-4587",
+      "phno": "567467",
       "company": "No information provided",
-      "address": "27 east Alabama"
+      "address": "27 east Alabama",
+      "id": 2
     },
     {
       "id": 3,
@@ -159,6 +159,26 @@
       "company": "Accenture",
       "address": "address",
       "id": 16
+    },
+    {
+      "full_name": "Lucky Roy",
+      "short_name": "LR",
+      "role": "Developer",
+      "email": "lr@gmail.com",
+      "phno": "7264582765",
+      "company": "Marithi",
+      "address": "Address",
+      "id": 17
+    },
+    {
+      "full_name": "Swathi Saha",
+      "short_name": "SS",
+      "role": "Developer",
+      "email": "ssaha@gmail.com",
+      "phno": "8682459252",
+      "company": "Maruti",
+      "address": "address",
+      "id": 18
     }
   ]
 }

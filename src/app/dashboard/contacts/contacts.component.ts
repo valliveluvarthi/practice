@@ -26,7 +26,8 @@ export class ContactsComponent implements OnInit, AfterViewInit {
   constructor(private router: Router,
     public routeConstants: RouteConstants,
     public dashboardService: DashboardService,
-    public dialog: MatDialog,) {
+    public dialog: MatDialog,
+    ) {
   }
 
   ngOnInit(): void {

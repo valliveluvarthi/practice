@@ -9,6 +9,7 @@ import { MatCommonModule } from '@angular/material/core';
 import { CommonModule } from '@angular/common';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [AddcontactComponent],
   entryComponents: [AddcontactComponent],
@@ -22,7 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     CdkTableModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
 })
 export class AddContactModule { }

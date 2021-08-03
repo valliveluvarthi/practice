@@ -19,6 +19,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddContactModule } from './dashboard/contacts/addcontact/addcontact.module';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { AddContactModule } from './dashboard/contacts/addcontact/addcontact.mod
     HttpClientModule,
     MatDialogModule,
     AddContactModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
