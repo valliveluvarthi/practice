@@ -16,10 +16,10 @@
     </div>
     <div class="search-row">
         <div class="search">
-            <input type="text" class="searchTerm" placeholder="Search contacts" id="search">
-            <button type="submit" class="searchButton" (click)="filterBy()">
-                <i class="fa fa-search"></i>
-            </button>
+                <input (keyup) ="filterBy()" type="text" class="searchTerm" placeholder="Search contacts" id="search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
         </div>
         <div>
             <button class="btn btn-md-default" (click)="onAddContact('row','Add',0)">
@@ -38,24 +38,24 @@
                 </tr>
                 <ng-container *ngFor="let row of data; let i = index">
                     <tr class="content-list" (click)="onRowClick(i)">
-                            <td>
-                                <input type="checkbox" name="" id="check-box">
-                            </td>
-                            <td>
-                                <div class="basic-info-content">
-                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
-                                    <div class="name-email-div">
-                                        <div>
-                                            {{row.full_name}}
-                                        </div>
-                                        <div class="email">
-                                            {{row.email}}
-                                        </div>
+                        <td>
+                            <input type="checkbox" name="" id="check-box">
+                        </td>
+                        <td>
+                            <div class="basic-info-content">
+                                <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
+                                <div class="name-email-div">
+                                    <div>
+                                        {{row.full_name}}
+                                    </div>
+                                    <div class="email">
+                                        {{row.email}}
                                     </div>
                                 </div>
-                            </td>
-                            <td>{{row.company}}</td>
-                            <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
+                            </div>
+                        </td>
+                        <td>{{row.company}}</td>
+                        <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
                     </tr>
                 </ng-container>
             </table>
@@ -64,7 +64,8 @@
         <div class="content-column-2">
             <div class="contact-details">
                 <div>
-                    <div class="contact-details-circle" id="contact-circle">{{getContactShortName(arr_on_row_click?.short_name)}}</div>
+                    <div class="contact-details-circle" id="contact-circle">
+                        {{getContactShortName(arr_on_row_click?.short_name)}}</div>
                     <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                     <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                 </div>

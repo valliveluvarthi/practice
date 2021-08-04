@@ -15,8 +15,6 @@ import { BsDropdownDirective } from 'ngx-bootstrap/dropdown';
   providers: [DashboardService],
 })
 export class ContactsComponent implements OnInit, AfterViewInit {
-  // to post the received data
-  
   data: any;
   private onDestroy$: Subject<void> = new Subject<void>();
   public content: any;
@@ -31,6 +29,7 @@ export class ContactsComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    
     this.dashboardService.getContacts().subscribe((result: any) => {
       console.log(result);
       this.searchdata = result;
