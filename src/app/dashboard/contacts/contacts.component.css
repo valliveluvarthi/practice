@@ -80,11 +80,12 @@
     border: none;
     padding: 1%;
     padding-left: 5%;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     outline: none;
     color: #3b3d3c;
     background-color: rgb(223, 220, 215);
+    height: 3rem;
   }
 .searchTerm:focus{
     color: #3b3d3c;
@@ -93,12 +94,13 @@
     background-color: rgb(223, 220, 215);
     text-align: center;
     color: #3b3d3c;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     cursor: pointer;
     font-size: 15px;
     border: none;
     padding-right: 5%;
+    height: 3rem;
   }
 .searchButton i{
     color: #000000;
@@ -162,6 +164,7 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 1%;
+    border-bottom: 1px solid darkgrey;
 }
 .table-scroll{
     width: 100%;
@@ -170,6 +173,7 @@
     overflow-y:scroll;
     height:60rem;
     display: block;
+    border-bottom: 1px solid darkgrey;
 }
 tr th{
     color: #3b3d3c;
@@ -280,14 +284,54 @@ table tr td input{
   .content-row{
     margin-top: 5%;
   }
-.col-xs-offset-2 {
-    margin-left: 14.666667%;
-}
+  .contact-col-details{
+    background:rgb(223, 220, 215);
+  }
+
 @media only screen and (max-width: 768px) {
   .btn{
     background: linear-gradient(to right, #b89039 0%, #e72c83 100%);
     color: #ffffff;
     border: none;
-    margin-left: 22%;
+    margin-left: 44%;
+  }
+  .column2{
+    margin-left: 17%;
+    margin-top: 2%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-xs-offset-2 {
+    margin-left: 12.666667%;
+  }
+  .column2{
+    margin-left: 14%;
+    margin-top: 2%;
+  }
+  .searchTerm{
+    width: 75%;
+    border: none;
+    padding: 1%;
+    padding-left: 5%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    outline: none;
+    color: #3b3d3c;
+    background-color: rgb(223, 220, 215);
+    height: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col-xs-offset-2 {
+    margin-left: 12.666667%;
+  }
+  .column2{
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-xs-offset-2 {
+    margin-left: 11.666667%;
   }
 }

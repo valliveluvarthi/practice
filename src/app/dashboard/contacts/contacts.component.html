@@ -18,7 +18,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xs-offset-1">
+            <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 
+            col-xs-offset-2">
                 <div class="search">
                     <input (keyup)="filterBy()" type="text" class="searchTerm" placeholder="Search contacts"
                         id="search">
@@ -27,7 +28,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
                 <button class="btn btn-md-default" (click)="onAddContact('row','Add',0)">
                     <i class='bx bx-plus'></i> &nbsp; Add Contact
                 </button>
@@ -38,7 +39,7 @@
         <div class="row content-row">
             <!-- in a row 2 columns -->
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6
-            col-xs-offset-1">
+            col-xs-offset-2">
                 <table [ngClass]="(data?.length <= 7)?'table':'table-scroll'">
                     <tr>
                         <th>+</th>
@@ -70,8 +71,8 @@
                     </ng-container>
                 </table>
             </div>
-            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-                <div style="background:rgb(223, 220, 215);">
+            <div class="col-xs-8 col-sm-5 col-md-4 col-lg-4 column2">
+                <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
                             <div class="contact-details-circle" id="contact-circle">
