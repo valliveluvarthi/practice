@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { Inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
-import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Subscription } from 'rxjs';
 import { DashboardService } from '../../dashboard.service';
 @Component({
   selector: 'app-addcontact',
@@ -12,26 +13,27 @@ import { DashboardService } from '../../dashboard.service';
 })
 export class AddcontactComponent implements OnInit {
   modalForm: FormGroup;
-  data_row : any = {};
+  data_row: any = {};
+  private subscribeForm: Subscription;
+  initialTransactionFormValue: string = "";
+  formValueChanged: boolean = false;
   constructor(
     public dialogRef: MatDialogRef<AddcontactComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private formBuilder: FormBuilder,
-    public dashboardService : DashboardService,
-    public snackbar : MatSnackBar,
-    ) {
-      console.log(data)
-     }
+    public dashboardService: DashboardService,
+    public snackbar: MatSnackBar,
+  ) { }
   ngOnInit(): void {
     this.modalForm = this.formBuilder.group({
-      full_name : new FormControl('',Validators.required),
-      role: new FormControl('',Validators.required),
-      email: new FormControl('', [Validators.email,Validators.required]),
-      phno : new FormControl('',Validators.required),
-      company : new FormControl('',Validators.required),
-      address : new FormControl('',Validators.required),
+      full_name: new FormControl('', Validators.required),
+      role: new FormControl('', Validators.required),
+      email: new FormControl('', [Validators.email, Validators.required]),
+      phno: new FormControl('', Validators.required),
+      company: new FormControl('', Validators.required),
+      address: new FormControl('', Validators.required),
     });
-    if(this.data.type === "Edit"){
+    if (this.data.type === "Edit") {
       console.log(this.data);
       this.modalForm.controls.full_name.setValue(this.data.row.full_name);
       this.modalForm.controls.role.setValue(this.data.row.role);
@@ -41,34 +43,39 @@ export class AddcontactComponent implements OnInit {
       this.modalForm.controls.address.setValue(this.data.row.address);
     }
   }
-  
+
   onCancel(): void {
     this.dialogRef.close();
     this.modalForm.reset();
   }
 
-  onSubmit(){
-    if(this.modalForm.valid){
+  onSubmit() {
+    if (this.modalForm.valid) {
       var shortName;
       let strArr = this.modalForm.controls.full_name.value.split(" ");
-      
-      if(strArr[0].toUpperCase().charAt(0)){
+
+      if (strArr[0].toUpperCase().charAt(0)) {
         shortName = strArr[0].toUpperCase().charAt(0)
       }
-      if(strArr[1] && strArr[1].toUpperCase().charAt(0)){
+      if (strArr[1] && strArr[1].toUpperCase().charAt(0)) {
         shortName = shortName + strArr[1].toUpperCase().charAt(0);
       }
-      
+
       var obj = {
-        full_name : this.modalForm.controls.full_name.value.charAt(0).toUpperCase() + this.modalForm.controls.full_name.value.slice(1),
-        short_name : shortName,
+        full_name: this.modalForm.controls.full_name.value.charAt(0).toUpperCase() + this.modalForm.controls.full_name.value.slice(1),
+        short_name: shortName,
         role: this.modalForm.controls.role.value.charAt(0).toUpperCase() + this.modalForm.controls.role.value.slice(1),
-        email : this.modalForm.controls.email.value,
+        email: this.modalForm.controls.email.value,
         phno: this.modalForm.controls.phno.value,
         company: this.modalForm.controls.company.value.charAt(0).toUpperCase() + this.modalForm.controls.company.value.slice(1),
-        address : this.modalForm.controls.address.value
+        address: this.modalForm.controls.address.value
       }
-      if(this.data.type === 'Add'){
+      if(this.modalForm.dirty){
+        this.formValueChanged = true;
+      }else{
+        this.formValueChanged = false;
+      }
+      if (this.data.type === 'Add') {
         this.dashboardService.postContacts(obj).subscribe((result: any) => {
           this.dialogRef.close();
           this.modalForm.reset();
@@ -77,14 +84,22 @@ export class AddcontactComponent implements OnInit {
           });
         });
       }
-      if(this.data.type === "Edit")
-      this.dashboardService.updateContacts(obj,this.data.row.id).subscribe((result: any) => {
+      if (this.data.type === "Edit" && this.formValueChanged) {
+        this.dashboardService.updateContacts(obj, this.data.row.id).subscribe((result: any) => {
+          this.dialogRef.close();
+          this.modalForm.reset();
+          this.snackbar.open("Contact updates successfully!", "", {
+            duration: 1000,
+          });
+        });
+      }else{
         this.dialogRef.close();
-        this.modalForm.reset();
-        this.snackbar.open("Contact updates successfully!", "", {
+        this.snackbar.open("No changes made to the contact!", "", {
           duration: 1000,
         });
-      });
+      }
     }
   }
+
+  
 }
