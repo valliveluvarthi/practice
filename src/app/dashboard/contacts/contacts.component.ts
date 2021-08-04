@@ -20,16 +20,18 @@ export class ContactsComponent implements OnInit, AfterViewInit {
   public content: any;
   searchdata: any;
   arr_on_row_click: any;
-  
+  colorArr = ["#af0f4a", "#e66f21", "#beb79c", "#3f4a6a", "#a381b3",
+    "#e24186", "#fe5747", "#fda62e", "#dcdd53", "#d3ace3",
+    "#1d726a", "#63b395", "#c6f0d8", "#0accfa", "#c95c11"];
   constructor(private router: Router,
     public routeConstants: RouteConstants,
     public dashboardService: DashboardService,
     public dialog: MatDialog,
-    ) {
+  ) {
   }
 
   ngOnInit(): void {
-    
+
     this.dashboardService.getContacts().subscribe((result: any) => {
       console.log(result);
       this.searchdata = result;
@@ -38,7 +40,6 @@ export class ContactsComponent implements OnInit, AfterViewInit {
     });
   }
   ngAfterViewInit() {
-   
   }
   filterBy() {
     let filterBy = document.querySelectorAll("#search")[0]['value'];
@@ -50,7 +51,7 @@ export class ContactsComponent implements OnInit, AfterViewInit {
       this.data = this.searchdata;
     }
   }
-  
+
   onRowClick(i) {
     this.arr_on_row_click = this.data[i];
   }
@@ -75,23 +76,19 @@ export class ContactsComponent implements OnInit, AfterViewInit {
     this.onDestroy$.complete();
     this.onDestroy$.unsubscribe();
   }
-  getBackgroundColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    color += "ad";
-    return color;
+  randomValue(list) {
+    return list[Math.floor(Math.random() * list.length)];
+  };
+  getShortName(name, id) {
+      let div = document.getElementById(id)!;
+      if(div.innerHTML === ""){
+        div.style.backgroundColor = this.randomValue(this.colorArr);
+      }
+      return name;
   }
-  getShortName(name,id){
-    let div = document.getElementById(id)!;
-    div.style.backgroundColor = this.getBackgroundColor();
-    return name;
-  }
-  getContactShortName(name){
+  getContactShortName(name) {
     let div = document.getElementById("contact-circle")!;
-    div.style.backgroundColor = this.getBackgroundColor();
+    div.style.backgroundColor = this.randomValue(this.colorArr);
     return name;
   }
 }
