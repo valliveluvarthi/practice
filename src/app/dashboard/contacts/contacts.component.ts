@@ -6,8 +6,6 @@ import { merge, Observable, Subject } from 'rxjs';
 import { takeUntil, tap } from 'rxjs/operators';
 import { MatDialog } from '@angular/material/dialog';
 import { AddcontactComponent } from './addcontact/addcontact.component';
-import { ElementRef } from '@angular/core';
-import { BsDropdownDirective } from 'ngx-bootstrap/dropdown';
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
@@ -63,12 +61,7 @@ export class ContactsComponent implements OnInit, AfterViewInit {
       data: { row, type }
     });
     dialogRef.afterClosed().pipe(takeUntil(this.onDestroy$)).subscribe(result => {
-      this.dashboardService.getContacts().subscribe((result: any) => {
-        console.log(result);
-        this.searchdata = result;
-        this.data = result;
-        this.arr_on_row_click = result[0];
-      });
+      window.location.reload();
     });
   }
   ngOnDestroy(): void {
@@ -80,11 +73,11 @@ export class ContactsComponent implements OnInit, AfterViewInit {
     return list[Math.floor(Math.random() * list.length)];
   };
   getShortName(name, id) {
-      let div = document.getElementById(id)!;
-      if(div.innerHTML === ""){
-        div.style.backgroundColor = this.randomValue(this.colorArr);
-      }
-      return name;
+    let div = document.getElementById(id)!;
+    if (div.innerHTML === "") {
+      div.style.backgroundColor = this.randomValue(this.colorArr);
+    }
+    return name;
   }
   getContactShortName(name) {
     let div = document.getElementById("contact-circle")!;
