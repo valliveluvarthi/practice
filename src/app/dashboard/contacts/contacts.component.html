@@ -141,7 +141,7 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
+                                    <div class="circle" id="xs{{row.id}}">{{getShortName(row.short_name,row.id,"xs")}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -162,8 +162,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle">
-                                {{getContactShortName(arr_on_row_click?.short_name)}}</div>
+                            <div class="contact-details-circle" id="contact-circle-xs">
+                                {{getContactShortName(arr_on_row_click?.short_name,"contact-circle-xs")}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                         </div>
@@ -208,7 +208,7 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
+                                    <div class="circle" id="sm{{row.id}}">{{getShortName(row.short_name,row.id,"sm")}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -229,8 +229,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle">
-                                {{getContactShortName(arr_on_row_click?.short_name)}}</div>
+                            <div class="contact-details-circle" id="contact-circle-sm">
+                                {{getContactShortName(arr_on_row_click?.short_name,"contact-circle-sm")}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                         </div>
@@ -275,7 +275,7 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
+                                    <div class="circle" id="md{{row.id}}">{{getShortName(row.short_name,row.id,"md")}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -296,8 +296,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle">
-                                {{getContactShortName(arr_on_row_click?.short_name)}}</div>
+                            <div class="contact-details-circle" id="contact-circle-md">
+                                {{getContactShortName(arr_on_row_click?.short_name,"contact-circle-md")}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                         </div>
@@ -342,7 +342,7 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" [id]="row.id">{{getShortName(row.short_name,row.id)}}</div>
+                                    <div class="circle" id="lg{{row.id}}">{{getShortName(row.short_name,row.id,"lg")}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -363,8 +363,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle">
-                                {{getContactShortName(arr_on_row_click?.short_name)}}</div>
+                            <div class="contact-details-circle" id="contact-circle-lg">
+                                {{getContactShortName(arr_on_row_click?.short_name,"contact-circle-lg")}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
                         </div>

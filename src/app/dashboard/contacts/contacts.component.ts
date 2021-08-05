@@ -72,15 +72,15 @@ export class ContactsComponent implements OnInit, AfterViewInit {
   randomValue(list) {
     return list[Math.floor(Math.random() * list.length)];
   };
-  getShortName(name, id) {
-    let div = document.getElementById(id)!;
+  getShortName(name, id, screen_type) {
+    let div = document.getElementById(screen_type+id)!;
     if (div.innerHTML === "") {
       div.style.backgroundColor = this.randomValue(this.colorArr);
     }
     return name;
   }
-  getContactShortName(name) {
-    let div = document.getElementById("contact-circle")!;
+  getContactShortName(name,id) {
+    let div = document.getElementById(id)!;
     div.style.backgroundColor = this.randomValue(this.colorArr);
     return name;
   }
