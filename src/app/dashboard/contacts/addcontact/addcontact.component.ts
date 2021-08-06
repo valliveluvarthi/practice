@@ -17,6 +17,9 @@ export class AddcontactComponent implements OnInit {
   private subscribeForm: Subscription;
   initialTransactionFormValue: string = "";
   formValueChanged: boolean = false;
+  colorArr = ["#af0f4a", "#e66f21", "#beb79c", "#3f4a6a", "#a381b3",
+    "#e24186", "#fe5747", "#fda62e", "#dcdd53", "#d3ace3",
+    "#1d726a", "#63b395", "#c6f0d8", "#0accfa", "#c95c11"];
   constructor(
     public dialogRef: MatDialogRef<AddcontactComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -29,7 +32,7 @@ export class AddcontactComponent implements OnInit {
       full_name: new FormControl('', Validators.required),
       role: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.email, Validators.required]),
-      phno: new FormControl('', Validators.required),
+      phno: new FormControl('', [Validators.required,Validators.pattern("^[+]?[(]?[0-9]{3}[)]?[0-9]{3}[-]?[0-9]{4}$")]),
       company: new FormControl('', Validators.required),
       address: new FormControl('', Validators.required),
     });
@@ -68,7 +71,8 @@ export class AddcontactComponent implements OnInit {
         email: this.modalForm.controls.email.value,
         phno: this.modalForm.controls.phno.value,
         company: this.modalForm.controls.company.value.charAt(0).toUpperCase() + this.modalForm.controls.company.value.slice(1),
-        address: this.modalForm.controls.address.value
+        address: this.modalForm.controls.address.value,
+        color : this.colorArr[Math.floor(Math.random() * this.colorArr.length)]
       }
       if(this.modalForm.dirty){
         this.formValueChanged = true;
@@ -98,6 +102,11 @@ export class AddcontactComponent implements OnInit {
           duration: 1000,
         });
       }
+    }else{
+      this.dialogRef.close();
+      this.snackbar.open("Please check the form - Form is Invalid!", "", {
+        duration: 1000,
+      });
     }
   }
 

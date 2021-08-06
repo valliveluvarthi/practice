@@ -24,7 +24,7 @@
         </div>
         <div class="phno">
             <mat-form-field class="mat-form-field">
-                <input matInput type="text"  maxlength="10" formControlName="phno" placeholder="Pnone Number">
+                <input matInput type="text" maxlength="14" formControlName="phno" placeholder="Pnone Number - eg: +(xxx)xxx-xxxx">
                 <mat-error *ngIf="modalForm.controls.phno.value === ''">Please enter pnone number.</mat-error>
             </mat-form-field>
         </div>

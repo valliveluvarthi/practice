@@ -250,14 +250,46 @@ table tr td input{
     background:rgb(223, 220, 215);
   }
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 320px) { 
   .column2{
     margin-top: 2%;
   }
-  .search-div .col-xs-offset-1 {
-    margin-left: 11.333333%;
+  .btn{
+    margin-top: 3%;
   }
 }
+@media (min-width: 320px) and (max-width: 450px) { 
+  .column2{
+    margin-top: 2%;
+  }
+  .btn{
+    margin-top: 3%;
+  }
+}
+@media (min-width: 450px) and (max-width: 768px) { 
+  .column2{
+    margin-top: 2%;
+  }
+  .btn{
+    margin-top: 3%;
+  }
+}
+/* @media (min-width: 450px) and (max-width: 580px) { 
+  .column2{
+    margin-top: 2%;
+  }
+  .btn{
+    margin-top: 3%;
+  }
+}
+@media (min-width: 580px) and (max-width: 766px) {
+  .column2{
+    margin-top: 2%;
+  }
+  .btn{
+    margin-top: 3%;
+  }
+} */
 @media only screen and (min-width: 768px) {
   .column2{
     margin-top: 0;

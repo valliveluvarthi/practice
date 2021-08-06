@@ -17,30 +17,26 @@ export class ContactsComponent implements OnInit, AfterViewInit {
   private onDestroy$: Subject<void> = new Subject<void>();
   public content: any;
   searchdata: any;
-  arr_on_row_click: any;
-  colorArr = ["#af0f4a", "#e66f21", "#beb79c", "#3f4a6a", "#a381b3",
-    "#e24186", "#fe5747", "#fda62e", "#dcdd53", "#d3ace3",
-    "#1d726a", "#63b395", "#c6f0d8", "#0accfa", "#c95c11"];
+  arr_on_row_click:any;
   constructor(private router: Router,
     public routeConstants: RouteConstants,
     public dashboardService: DashboardService,
     public dialog: MatDialog,
-  ) {
-  }
+  ) {}
 
   ngOnInit(): void {
-
     this.dashboardService.getContacts().subscribe((result: any) => {
       console.log(result);
       this.searchdata = result;
       this.data = result;
+      this.arr_on_row_click = {};
       this.arr_on_row_click = result[0];
     });
   }
   ngAfterViewInit() {
   }
-  filterBy() {
-    let filterBy = document.querySelectorAll("#search")[0]['value'];
+  filterBy(id) {
+    let filterBy = document.querySelectorAll("#"+id)[0]['value'];
     if (filterBy != "") {
       this.data = this.data.filter((item) => {
         return item.full_name.toLowerCase().includes(filterBy.toLowerCase());
@@ -49,7 +45,6 @@ export class ContactsComponent implements OnInit, AfterViewInit {
       this.data = this.searchdata;
     }
   }
-
   onRowClick(i) {
     this.arr_on_row_click = this.data[i];
   }
@@ -61,7 +56,13 @@ export class ContactsComponent implements OnInit, AfterViewInit {
       data: { row, type }
     });
     dialogRef.afterClosed().pipe(takeUntil(this.onDestroy$)).subscribe(result => {
-      window.location.reload();
+      this.dashboardService.getContacts().subscribe((result: any) => {
+        console.log(result);
+        this.searchdata = result;
+        this.data = result;
+        this.arr_on_row_click = {};
+        this.arr_on_row_click = result[0];
+      });
     });
   }
   ngOnDestroy(): void {
@@ -69,19 +70,12 @@ export class ContactsComponent implements OnInit, AfterViewInit {
     this.onDestroy$.complete();
     this.onDestroy$.unsubscribe();
   }
-  randomValue(list) {
-    return list[Math.floor(Math.random() * list.length)];
-  };
-  getShortName(name, id, screen_type) {
-    let div = document.getElementById(screen_type+id)!;
-    if (div.innerHTML === "") {
-      div.style.backgroundColor = this.randomValue(this.colorArr);
+  showColumn(){
+    if (this.arr_on_row_click && Object.entries(this.arr_on_row_click).length > 0){
+      return true;
     }
-    return name;
-  }
-  getContactShortName(name,id) {
-    let div = document.getElementById(id)!;
-    div.style.backgroundColor = this.randomValue(this.colorArr);
-    return name;
+    else{
+      return false;
+    }
   }
 }
