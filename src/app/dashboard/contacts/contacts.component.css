@@ -182,9 +182,11 @@ table tr td input{
     background: grey; 
   }
   .bx-edit-alt{
-      font-size: 20px;
-      cursor: pointer;  
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 5%;
   }
+  
   .content-list:hover{
     background: rgb(225, 225, 233);
     cursor: pointer;
@@ -242,6 +244,7 @@ table tr td input{
   .contact-details-subdiv-2{
     width: 100%;
     padding: 3%;
+    word-break: break-word;
   }
   .content-row{
     margin-top: 5%;
@@ -257,6 +260,30 @@ table tr td input{
   .btn{
     margin-top: 5%;
   }
+  .circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    min-width: 5rem;
+  }
+  .email{
+    color: gray;
+    font-size: 1rem;
+    word-break: break-word;
+  }
+  .company-div{
+    padding-left: 20%;
+    word-break: break-word;
+  }
+  .bx-edit-alt{
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 20%;
+  }
 }
 @media (min-width: 320px) and (max-width: 450px) { 
   .column2{
@@ -265,8 +292,38 @@ table tr td input{
   .btn{
     margin-top: 5%;
   }
+  .circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    min-width: 4rem;
+    margin-top: 10%;
+  }
+  .email{
+    color: gray;
+    font-size: 1rem;
+    word-break: break-word;
+  }
+  .company-div{
+    padding-left: 20%;
+    word-break: break-word;
+  }
+  .bx-edit-alt{
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 20%;
+  }
+  table tr td input{
+    margin-bottom: 440%;
+    width: 2rem;
+    height: 2rem;
+  }
 }
-@media (min-width: 450px){ 
+@media (min-width: 450px) and (max-width: 600px){ 
   .column2{
     margin-top: 2%;
   }
@@ -277,6 +334,49 @@ table tr td input{
     width: 65%;
     position: relative;
     display: flex;
+  }
+  .circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    min-width: 5rem;
+  }
+  .email{
+    color: gray;
+    font-size: 1rem;
+    word-break: break-word;
+  }
+}
+@media (min-width: 600px){ 
+  .column2{
+    margin-top: 2%;
+  }
+  .btn{
+    margin-top: 5%;
+  }
+  .search{
+    width: 65%;
+    position: relative;
+    display: flex;
+  }
+  .circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    min-width: 5rem;
+  }
+  .email{
+    color: gray;
+    font-size: 1rem;
+    word-break: break-word;
   }
 }
 @media only screen and (min-width: 768px) {

@@ -9,6 +9,9 @@ body{
     width: 100%;
     overflow: hidden;
 }
+.container{
+    margin: auto;
+}
 
 /* width below 320px  */
 @media(max-width: 325px) {
