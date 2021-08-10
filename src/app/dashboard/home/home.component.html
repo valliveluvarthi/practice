@@ -1,5 +1,51 @@
 <div class="wrapper">
-    <div class="sidebar">
+    <div *ngIf="showSideNav()" class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
+            </div>
+        </div>
+        <ul *ngIf="sidebar?.classList?.value.includes('active')" class="nav_list">
+            <li>
+                <div>
+                    <a href="#">
+                        <i class='bx bxs-home'></i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="dashboard/contacts">
+                    <i class='bx bxs-contact'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-file-blank'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-time-five'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-data'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- <div *ngIf="inner_width > 450" class="sidebar">
         <div class="logo_content">
             <div class="logo">
                 <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
@@ -44,7 +90,7 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
     <div class="home_content">
         <div class="container-fluid text">
             <hr class="hr-line"/>
