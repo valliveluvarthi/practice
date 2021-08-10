@@ -5,49 +5,42 @@
                 <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
             </div>
         </div>
-        <ul class="nav_list">
+        <ul *ngIf="sidebar?.classList?.value.includes('active')" class="nav_list">
             <li>
                 <div>
                     <a href="#">
                         <i class='bx bxs-home'></i>
-                        <span class="links_name">Home</span>
                     </a>
                 </div>
             </li>
             <li>
                 <a href="dashboard/contacts">
                     <i class='bx bxs-contact'></i>
-                    <span class="links_name">Contacts</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-file-blank'></i>
-                    <span class="links_name">Files</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-time-five'></i>
-                    <span class="links_name">Timer</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-data'></i>
-                    <span class="links_name">Data</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-calendar'></i>
-                    <span class="links_name">Schedules</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bx-cog'></i>
-                    <span class="links_name">Settings</span>
                 </a>
             </li>
         </ul>

@@ -14,7 +14,7 @@ body{
 }
 
 /* width below 320px  */
-@media(max-width: 325px) {
+@media(max-width: 320px) {
     .sidebar{
         position: fixed;
         top: 0;
@@ -23,23 +23,11 @@ body{
          /* this goes to side bar active - width: 15%;  */
         width: 16%;
          /* background-color: #000000;  */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         /* this goes to side bar active - padding: 1% 2%;  */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
-    }
+    } 
     .sidebar .logo_content .logo{
         color: #ffffff;
         display: flex;
@@ -52,23 +40,23 @@ body{
     .sidebar #btn{
         position: absolute;
         color: #ffffff;
-        left: 50%;
-        top: 5%;
-        font-size: 28px;
+        left: 47%;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
         width: 5rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
@@ -76,7 +64,7 @@ body{
         list-style: none;
         line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -84,16 +72,16 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
         /* min-width: 4.5rem; */
         min-width : -webkit-fill-available;
@@ -113,52 +101,44 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
+        width: calc(100% - 0%);
+        left: 2%;
+        transition: all 0.5s ease;
+    }
+    .sidebar.active ~ .home_content{
         width: calc(100% - 16%);
         left: 16%;
-        transition: all 0.5s ease;
     }
     .home_content .text{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
-    }
     .home_content .hr-line{
-        margin-top: 10%;
+        margin-top: 16%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+    .sidebar.active ~ .home_content .hr-line{
+        margin-top: 19%;
         height: 1px;
         background-color: #e0dada;
         border: none;
     }
 }
 /* width above 320px and below 450px  */
-@media (min-width: 325px) and (max-width: 455px) {
+@media (min-width: 320px) and (max-width: 455px) {
     .sidebar{
         position: fixed;
         top: 0;
         left: 0;
         height: 100%;
-         /* this goes to side bar active - width: 15%;  */
         width: 16%;
-         /* background-color: #000000;  */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%;  */
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
     }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
-    }
+    
     .sidebar .logo_content .logo{
         color: #ffffff;
         display: flex;
@@ -172,22 +152,22 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 5%;
-        font-size: 28px;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 6rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
@@ -195,7 +175,7 @@ body{
         list-style: none;
         line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -203,16 +183,16 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
         /* min-width: 6rem; */
         min-width: -webkit-fill-available;
@@ -221,19 +201,11 @@ body{
         text-align: center;
         font-size: 16px;
     }
-    .sidebar.active ul li a i{
-        height: 6rem;
-        min-width: 6rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
-    }
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 16%);
-        left: 16%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -241,14 +213,24 @@ body{
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
+        width: calc(100% - 16%);
+        left: 16%;
     }
     .home_content .hr-line{
-        margin-top: 10%;
+        margin-top: 15%;
         height: 1px;
         background-color: #e0dada;
         border: none;
+        top: 15%;
+        position: sticky;
+    }
+    .sidebar.active ~ .home_content .hr-line{
+        margin-top: 17%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+        top: 17%;
+        position: sticky;
     }
 }
 /* width above 455px  */
@@ -258,25 +240,10 @@ body{
         top: 0;
         left: 0;
         height: 100%;
-         /* this goes to side bar active - width: 15%;  */
-        width: 16%;
-         /* background-color: #000000;  */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%;  */
+        width: 12%;
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -291,22 +258,22 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 5%;
-        font-size: 28px;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 7rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
@@ -314,7 +281,7 @@ body{
         list-style: none;
         line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -322,27 +289,19 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
-    }
-    .sidebar ul li a i{
-        height: 6rem;
-        /* min-width: 7rem; */
-        min-width: -webkit-fill-available;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
     }
     .sidebar.active ul li a i{
         height: 6rem;
-        min-width: 7rem;
+        /* min-width: 6rem; */
+        min-width: -webkit-fill-available;
         line-height: 6rem;
         border-radius: 12px;
         text-align: center;
@@ -351,8 +310,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 16%);
-        left: 16%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -360,11 +319,17 @@ body{
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
+        width: calc(100% - 12%);
+        left: 12%;
     }
     .home_content .hr-line{
         margin-top: 10%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+    .sidebar.active ~ .home_content .hr-line{
+        margin-top: 11%;
         height: 1px;
         background-color: #e0dada;
         border: none;
@@ -377,25 +342,10 @@ body{
         top: 0;
         left: 0;
         height: 100%;
-        /* this goes to side bar active - width: 15%; */
-        width: 9%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
+        width: 10%;
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -410,22 +360,22 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 1%;
-        font-size: 28px;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 6.5rem;
         text-align: center;
-        line-height: 50px;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
@@ -433,7 +383,7 @@ body{
         list-style: none;
         line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -441,19 +391,19 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
-        min-width: 5rem;
-        /* min-width: -webkit-fill-available; */
+        /* min-width: 6rem; */
+        min-width: -webkit-fill-available;
         line-height: 6rem;
         border-radius: 12px;
         text-align: center;
@@ -462,8 +412,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 9%);
-        left: 9%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -471,10 +421,16 @@ body{
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 25%);
-        left: 25%;
+        width: calc(100% - 10%);
+        left: 10%;
     }
     .home_content .hr-line{
+        margin-top: 8%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+    .sidebar.active ~ .home_content .hr-line{
         margin-top: 8%;
         height: 1px;
         background-color: #e0dada;
@@ -488,32 +444,17 @@ body{
         top: 0;
         left: 0;
         height: 100%;
-        /* this goes to side bar active - width: 15%; */
-        width: 7.5%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
+        width: 8%;
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
         display: flex;
         align-items: center;
         height: 5rem;
-        width: 5rem;
+        width: 100%;
         justify-content: center;
         transition: all 0.5s ease;
     }
@@ -521,22 +462,22 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 5%;
-        font-size: 28px;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 6.5rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
@@ -544,7 +485,7 @@ body{
         list-style: none;
         line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -552,18 +493,19 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
-        min-width: 5rem;
+        /* min-width: 6rem; */
+        min-width: -webkit-fill-available;
         line-height: 6rem;
         border-radius: 12px;
         text-align: center;
@@ -572,8 +514,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 8%);
-        left: 8%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -581,8 +523,8 @@ body{
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 22%);
-        left: 22%;
+        width: calc(100% - 8%);
+        left: 8%;
     }
     .home_content .hr-line{
         margin-top: 6%;
@@ -590,7 +532,13 @@ body{
         background-color: #e0dada;
         border: none;
     }
-} 
+    .sidebar.active ~ .home_content .hr-line{
+        margin-top: 6%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+}
 /* width above 992px */
 @media only screen and (min-width: 992px) {
     .sidebar{
@@ -598,25 +546,10 @@ body{
         top: 0;
         left: 0;
         height: 100%;
-        /* this goes to side bar active - width: 15%; */
         width: 6%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 15%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -631,30 +564,30 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 5%;
-        font-size: 28px;
+        top: 0;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 6.5rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
         height: 5rem;
         width: 100%;
         margin: 0 1%;
         list-style: none;
-        line-height: 50px;
+        line-height: 11rem;
     }
-    .sidebar ul li a{
+    .sidebar.active ul li a{
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -662,18 +595,19 @@ body{
         transition: all 0.4s ease;
         padding: 5%;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
-        min-width: 5rem;
+        /* min-width: 6rem; */
+        min-width: -webkit-fill-available;
         line-height: 6rem;
         border-radius: 12px;
         text-align: center;
@@ -682,8 +616,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 6%);
-        left: 6%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -691,10 +625,16 @@ body{
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 15%);
-        left: 15%;
+        width: calc(100% - 6%);
+        left: 6%;
     }
     .home_content .hr-line{
+        margin-top: 5%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+    .sidebar.active ~ .home_content .hr-line{
         margin-top: 5%;
         height: 1px;
         background-color: #e0dada;
@@ -708,135 +648,10 @@ body{
         top: 0;
         left: 0;
         height: 100%;
-        /* this goes to side bar active - width: 15%; */
         width: 5%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
+        /* background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170); */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 15%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
-    }
-    .sidebar .logo_content .logo{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        height: 5rem;
-        width: 100%;
-        justify-content: center;
-        transition: all 0.5s ease;
-    }
-    .sidebar #btn{
-        position: absolute;
-        color: #ffffff;
-        left: 45%;
-        top: 5%;
-        font-size: 28px;
-        height: 5rem;
-        width: 5rem;
-        text-align: center;
-        line-height: 100%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
-    .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
-        margin-top: 35%;
-    }
-    .sidebar ul li{
-        position: relative;
-        /* height: 50px; */
-        width: 100%;
-        margin: 0 1%;
-        list-style: none;
-        line-height: 50px;
-    }
-    .sidebar ul li a{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        padding: 5%;
-    }
-    .sidebar ul li a:hover{
-        color: #ffffff;
-        border-left: 3px solid #ffffff;
-        padding: 5%;
-        transition: all 0s ease;
-    }
-    .sidebar ul li a:hover i{
-        margin-left: -3px;
-    }
-    .sidebar ul li a i{
-        height: 6rem;
-        min-width: 5rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
-    }
-    .home_content{
-        position:absolute;
-        height: 100%;
-        width: calc(100% - 5%);
-        left: 5%;
-        transition: all 0.5s ease;
-    }
-    .home_content .text{
-        /* margin: 1%; */
-        color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 15%);
-        left: 15%;
-    }
-    .home_content .hr-line{
-        margin-top: 4%;
-        height: 1px;
-        background-color: #e0dada;
-        border: none;
-    }
-}
-/* width above 1330px */
-@media only screen and (min-width: 1330px) {
-    .sidebar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        /* this goes to side bar active - width: 15%; */
-        width: 5%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
-        padding: 1% 0%;
-        transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 12%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -851,146 +666,28 @@ body{
         position: absolute;
         color: #ffffff;
         left: 50%;
-        top: 5%;
-        font-size: 28px;
-        height: 5rem;
-        width: 5rem;
-        text-align: center;
-        line-height: 100%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
-    .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
-        margin-top: 35%;
-    }
-    .sidebar ul li{
-        position: relative;
-        /* height: 50px; */
-        width: 100%;
-        margin: 0 1%;
-        list-style: none;
-        line-height: 50px;
-    }
-    .sidebar ul li a{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        padding: 5%;
-    }
-    .sidebar ul li a:hover{
-        color: #ffffff;
-        border-left: 3px solid #ffffff;
-        padding: 5%;
-        transition: all 0s ease;
-    }
-    .sidebar ul li a:hover i{
-        margin-left: -3px;
-    }
-    .sidebar ul li a i{
-        height: 6rem;
-        min-width: 6rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 20px;
-        padding-left: 20%;
-    }
-    .home_content{
-        position:absolute;
-        height: 100%;
-        width: calc(100% - 5%);
-        left: 5%;
-        transition: all 0.5s ease;
-    }
-    .home_content .text{
-        /* margin: 1%; */
-        color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 12%);
-        left: 12%;
-    }
-    .home_content .hr-line{
-        margin-top: 4%;
-        height: 1px;
-        background-color: #e0dada;
-        border: none;
-    }
-}
-/* width above 1584px */
-@media only screen and (min-width: 1584px) {
-    .sidebar{
-        position: fixed;
         top: 0;
-        left: 0;
-        height: 100%;
-        /* this goes to side bar active - width: 15%; */
-        width: 7%;
-        /* background-color: #000000; */
-        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
-        /* this goes to side bar active - padding: 1% 2%; */
-        padding: 1% 0%;
-        transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-       color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 30px;
-        transition: all 0.5s ease;
-    }
-    .sidebar .logo_content .logo{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-        transition: all 0.5s ease;
-    }
-    .sidebar #btn{
-        position: absolute;
-        color: #ffffff;
-        left: 50%;
-        top: 12%;
-        font-size: 28px;
+        font-size: 3rem;
         height: 5rem;
-        width: 5rem;
+        width: 6.5rem;
         text-align: center;
-        line-height: 100%;
+        line-height: 5rem;
         transform: translateX(-50%);
         cursor: pointer;
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
-    .sidebar ul{
-        margin-top: 35%;
+    .sidebar.active .nav_list{
+        background: linear-gradient(to bottom,#b86c39,#b64da4 , #f32170);
     }
     .sidebar.active ul{
-        margin-top: 35%;
     }
-    .sidebar ul li{
+    .sidebar.active ul li{
         position: relative;
-        /* height: 50px; */
+        height: 5rem;
         width: 100%;
         margin: 0 1%;
         list-style: none;
-        line-height: 50px;
-    }
-    .sidebar ul li a{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        padding: 5%;
+        line-height: 11rem;
     }
     .sidebar.active ul li a{
         color: #ffffff;
@@ -999,52 +696,48 @@ body{
         text-decoration: none;
         transition: all 0.4s ease;
         padding: 5%;
-        justify-content: center;
     }
-    .sidebar ul li a:hover{
+    .sidebar.active ul li a:hover{
         color: #ffffff;
         border-left: 3px solid #ffffff;
         padding: 5%;
         transition: all 0s ease;
     }
-    .sidebar ul li a:hover i{
+    .sidebar.active ul li a:hover i{
         margin-left: -3px;
     }
-    .sidebar ul li a i{
+    .sidebar.active ul li a i{
         height: 6rem;
-        min-width: 7rem;
+        /* min-width: 6rem; */
+        min-width: -webkit-fill-available;
         line-height: 6rem;
         border-radius: 12px;
         text-align: center;
-        font-size: 24px;
-    }
-    .sidebar.active ul li a i{
-        height: 50px;
-        min-width: 50px;
-        line-height: 50px;
-        border-radius: 12px;
-        text-align: center;
-        /* font-size: 15px; */
-        font-size: 30px;
-        padding-left: 0%;
+        font-size: 16px;
     }
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 7%);
-        left: 7%;
+        width: calc(100% - 0%);
+        left: 2%;
         transition: all 0.5s ease;
     }
     .home_content .text{
-        margin: 1%;
+        /* margin: 1%; */
         color: #000;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 22%);
-        left: 22%;
+        width: calc(100% - 5%);
+        left: 5%;
     }
     .home_content .hr-line{
-        margin-top: 3%;
+        margin-top: 4%;
+        height: 1px;
+        background-color: #e0dada;
+        border: none;
+    }
+    .sidebar.active ~ .home_content .hr-line{
+        margin-top: 4%;
         height: 1px;
         background-color: #e0dada;
         border: none;
