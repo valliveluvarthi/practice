@@ -374,6 +374,14 @@ table tr td input{
     width: 100%;
     display: table;
   }
+  .table-scroll{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1%;
+    overflow-y:scroll;
+    height:60rem;
+    display: block;
+}
   .circle{
     width: 4rem;
     height: 4rem;

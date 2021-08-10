@@ -127,7 +127,7 @@
         <div class="row content-row">
             <!-- 1 and 2 cols for xs  -->
             <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-                <table>
+                <table [ngClass]="(data?.length <= 7)?'table':'table-scroll'">
                     <tr>
                         <th>+</th>
                         <th style="padding-left: 7%;">Basic info</th>
