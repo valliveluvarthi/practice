@@ -328,6 +328,14 @@ table tr td input{
     width: 2rem;
     height: 2rem;
   }
+  tr th{
+    color: #3b3d3c;
+    background: rgb(223, 220, 215);
+    padding: 2%;
+    position: sticky;
+    top: 0; 
+    font-size: smaller;
+  }
 }
 @media (min-width: 450px) and (max-width: 600px){ 
   .column2{
