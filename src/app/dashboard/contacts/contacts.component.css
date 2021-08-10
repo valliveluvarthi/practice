@@ -113,10 +113,11 @@
     width: 55%;
 }
 .company-header{
-    width: 30%;
+    /* width: 30%; */
 }
 .edit-header{
-    width: 50%;
+    /* width: 50%; */
+    /* padding-left: 1%; */
 }
 .circle {
     width: 5rem;
@@ -309,13 +310,17 @@ table tr td input{
     word-break: break-word;
   }
   .company-div{
-    padding-left: 20%;
-    word-break: break-word;
+    /* padding-left: 20%;
+    word-break: break-word; */
+    padding-left: 15%;
   }
   .bx-edit-alt{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    /* cursor: pointer; */
+    /* padding-left: 25%; */
+    font-size: 1.5rem;
     cursor: pointer;
-    padding-left: 20%;
+    padding-left: 60%;
   }
   table tr td input{
     margin-bottom: 440%;
