@@ -161,7 +161,7 @@
                     </ng-container>
                 </table>
             </div>
-            <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-9 column2">
+            <div *ngIf="showColumn()" class="hidden-sm hidden-md hidden-lg visible-xs col-xs-9 column2">
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
@@ -232,7 +232,7 @@
                     </ng-container>
                 </table>
             </div>
-            <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-5 column2">
+            <div *ngIf="showColumn()" class="hidden-xs hidden-md hidden-lg visible-sm col-sm-5 column2">
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
@@ -303,7 +303,7 @@
                     </ng-container>
                 </table>
             </div>
-            <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-4 column2">
+            <div *ngIf="showColumn()" class="hidden-xs hidden-sm hidden-lg visible-md col-md-4 column2">
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
