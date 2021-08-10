@@ -255,43 +255,27 @@ table tr td input{
   }
 
 @media(max-width: 320px) { 
-  .column2{
-    margin-top: 2%;
-  }
-  .btn{
-    margin-top: 5%;
-  }
-  .circle{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    color: #fff;
-    text-align: center;
-    line-height: 5rem;
-    min-width: 5rem;
-  }
-  .email{
-    color: gray;
-    font-size: 1rem;
-    word-break: break-word;
-  }
-  .company-div{
-    padding-left: 20%;
-    word-break: break-word;
-  }
-  .bx-edit-alt{
-    font-size: 2rem;
-    cursor: pointer;
-    padding-left: 20%;
-  }
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
-@media (min-width: 320px) and (max-width: 450px) { 
+  .col-xs-12{
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 100% !important;
+    overflow-x: scroll;
+  }
   .column2{
     margin-top: 2%;
   }
   .btn{
     margin-top: 5%;
+  }
+  table{
+    width: 100%;
+    display: table;
   }
   .circle{
     width: 4rem;
@@ -302,7 +286,6 @@ table tr td input{
     text-align: center;
     line-height: 4rem;
     min-width: 4rem;
-    margin-top: 10%;
   }
   .email{
     color: gray;
@@ -310,21 +293,15 @@ table tr td input{
     word-break: break-word;
   }
   .company-div{
-    /* padding-left: 20%;
-    word-break: break-word; */
-    padding-left: 15%;
     font-size: 1.2rem;
+    min-width: 15rem;
   }
   .bx-edit-alt{
-    /* font-size: 2rem; */
-    /* cursor: pointer; */
-    /* padding-left: 25%; */
     font-size: 1.5rem;
     cursor: pointer;
-    padding-left: 60%;
   }
   table tr td input{
-    margin-bottom: 440%;
+    margin-bottom: 183%;
     width: 2rem;
     height: 2rem;
   }
@@ -335,6 +312,9 @@ table tr td input{
     position: sticky;
     top: 0; 
     font-size: smaller;
+  }
+  .edit-header{
+    min-width: 4rem;
   }
   .contact-details-circle{
     width: 7rem;
@@ -362,10 +342,121 @@ table tr td input{
   flex-direction: row;
   font-size: 1.2rem;
  }
+ .col-xs-9 {
+  width: 100%;
+  }
+  .basic-info-content{
+    display: flex;
+    padding-left: 10%;
+    min-width: 20rem;
+  }
 }
-@media (min-width: 450px) and (max-width: 600px){ 
+@media (min-width: 320px) and (max-width: 448px) { 
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+  .col-xs-12{
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 100% !important;
+    overflow-x: scroll;
+  }
   .column2{
     margin-top: 2%;
+  }
+  .btn{
+    margin-top: 5%;
+  }
+  table{
+    width: 100%;
+    display: table;
+  }
+  .circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    min-width: 4rem;
+  }
+  .email{
+    color: gray;
+    font-size: 1rem;
+    word-break: break-word;
+  }
+  .company-div{
+    font-size: 1.2rem;
+    min-width: 15rem;
+  }
+  .bx-edit-alt{
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  table tr td input{
+    margin-bottom: 183%;
+    width: 2rem;
+    height: 2rem;
+  }
+  tr th{
+    color: #3b3d3c;
+    background: rgb(223, 220, 215);
+    padding: 2%;
+    position: sticky;
+    top: 0; 
+    font-size: smaller;
+  }
+  .edit-header{
+    min-width: 4rem;
+  }
+  .contact-details-circle{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 7rem;
+    margin: 10% auto;
+  }
+  .contact-details-name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .contact-details-role{
+    margin: auto;
+    text-align: center;
+    color: grey;
+    font-size: 1.2rem;
+ }
+ .contact-details-div{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+ }
+ .col-xs-9 {
+  width: 100%;
+  }
+  .basic-info-content{
+    display: flex;
+    padding-left: 10%;
+    min-width: 20rem;
+  }
+}
+@media (min-width: 448px) and (max-width: 600px){ 
+  .column2{
+    margin-top: 2%;
+  }
+  .col-xs-12{
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 100% !important;
+    overflow-x: scroll;
   }
   .btn{
     margin-top: 5%;
@@ -384,17 +475,41 @@ table tr td input{
     text-align: center;
     line-height: 5rem;
     min-width: 5rem;
+  } 
+  .col-xs-9 {
+    width: 100%;
   }
-  .email{
-    color: gray;
-    font-size: 1rem;
-    word-break: break-word;
+  tr th{
+    color: #3b3d3c;
+    background: rgb(223, 220, 215);
+    padding: 2%;
+    position: sticky;
+    top: 0; 
+    font-size: smaller;
+  }
+  .edit-header{
+    min-width: 4rem;
+  }
+  .basic-info-content{
+    display: flex;
+    padding-left: 10%;
+    min-width: 25rem;
+  }
+  .company-div{
+    font-size: 1.2rem;
+    min-width: 15rem;
   }
 }
 @media (min-width: 600px){ 
   .column2{
     margin-top: 2%;
   }
+  .col-xs-12{
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 100% !important;
+    overflow-x: scroll;
+  }
   .btn{
     margin-top: 5%;
   }
@@ -412,16 +527,35 @@ table tr td input{
     text-align: center;
     line-height: 5rem;
     min-width: 5rem;
+  } 
+  .col-xs-9 {
+    width: 60%;
   }
-  .email{
-    color: gray;
-    font-size: 1rem;
-    word-break: break-word;
+  tr th{
+    color: #3b3d3c;
+    background: rgb(223, 220, 215);
+    padding: 2%;
+    position: sticky;
+    top: 0; 
+    font-size: smaller;
+  }
+  .edit-header{
+    min-width: 4rem;
+  }
+  .basic-info-content{
+    display: flex;
+    padding-left: 10%;
+    min-width: 25rem;
+  }
+  .company-div{
+    font-size: 1.2rem;
+    min-width: 15rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .column2{
     margin-top: 0;
+    margin-left: 0;
   }
   .btn{
     margin-top: 0;
@@ -436,6 +570,13 @@ table tr td input{
   }
   .content-row .col-sm-offset-1 {
     margin-left: 4.333333%;
+  }
+  .company-div{
+    font-size: 1.2rem;
+    min-width: 15rem;
+  }
+  .col-sm-5{
+    width: 50%;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -3,17 +3,17 @@
         <div class="row">
             <!-- column for xs  -->
             <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-            <div class="contact-header">
-                <div class="contact-logo">
-                    <i class='bx bxs-contact'></i>
-                </div>
-                <div class="header-div">
-                    <h4 class="header">Contacts</h4>
-                    <div>
-                        <h6 class="sub-header-tag">Welcome to FULCRUM Contact page</h6>
+                <div class="contact-header">
+                    <div class="contact-logo">
+                        <i class='bx bxs-contact'></i>
+                    </div>
+                    <div class="header-div">
+                        <h4 class="header">Contacts</h4>
+                        <div>
+                            <h6 class="sub-header-tag">Welcome to FULCRUM Contact page</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <!-- column for sm  -->
             <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
@@ -127,12 +127,12 @@
         <div class="row content-row">
             <!-- 1 and 2 cols for xs  -->
             <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-                <table [ngClass]="(data?.length <= 7)?'table':'table-scroll'">
+                <table>
                     <tr>
                         <th>+</th>
-                        <th class="basic-info-header" style="padding-left: 7%;">Basic info</th>
-                        <th class="company-header" style="padding-left: 0;">Company</th>
-                        <th class="edit-header" style="padding-left: 0;">Edit</th>
+                        <th style="padding-left: 7%;">Basic info</th>
+                        <th>Company</th>
+                        <th class="edit-header">Edit</th>
                     </tr>
                     <ng-container *ngFor="let row of data; let i = index">
                         <tr class="content-list" (click)="onRowClick(i)">
@@ -141,7 +141,8 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" id="xs{{row.id}}" [style.background-color]="row.color">{{row.short_name}}</div>
+                                    <div class="circle" id="xs{{row.id}}" [style.background-color]="row.color">
+                                        {{row.short_name}}</div>
                                     <div class="name-email-div">
                                         <div style="font-size: 1.2rem;">
                                             {{row.full_name}}
@@ -152,7 +153,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><div class="company-div">{{row.company}}</div></td>
+                            <td>
+                                <div class="company-div">{{row.company}}</div>
+                            </td>
                             <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
                         </tr>
                     </ng-container>
@@ -162,7 +165,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle-xs" [style.background-color]="arr_on_row_click?.color">
+                            <div class="contact-details-circle" id="contact-circle-xs"
+                                [style.background-color]="arr_on_row_click?.color">
                                 {{arr_on_row_click?.short_name}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
@@ -193,7 +197,7 @@
                 </div>
             </div>
             <!-- 1 and 2 cols for sm  -->
-            <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6 col-sm-offset-1">
+            <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-10 col-sm-offset-1">
                 <table [ngClass]="(data?.length <= 7)?'table':'table-scroll'">
                     <tr>
                         <th>+</th>
@@ -208,7 +212,8 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" id="sm{{row.id}}" [style.background-color]="row.color">{{row.short_name}}</div>
+                                    <div class="circle" id="sm{{row.id}}" [style.background-color]="row.color">
+                                        {{row.short_name}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -219,7 +224,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><div>{{row.company}}</div></td>
+                            <td>
+                                <div class="company-div">{{row.company}}</div>
+                            </td>
                             <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
                         </tr>
                     </ng-container>
@@ -229,7 +236,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle-sm" [style.background-color]="arr_on_row_click?.color">
+                            <div class="contact-details-circle" id="contact-circle-sm"
+                                [style.background-color]="arr_on_row_click?.color">
                                 {{arr_on_row_click?.short_name}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
@@ -275,7 +283,8 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" id="md{{row.id}}" [style.background-color]="row.color">{{row.short_name}}</div>
+                                    <div class="circle" id="md{{row.id}}" [style.background-color]="row.color">
+                                        {{row.short_name}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -286,7 +295,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><div>{{row.company}}</div></td>
+                            <td>
+                                <div>{{row.company}}</div>
+                            </td>
                             <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
                         </tr>
                     </ng-container>
@@ -296,7 +307,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle-md" [style.background-color]="arr_on_row_click?.color">
+                            <div class="contact-details-circle" id="contact-circle-md"
+                                [style.background-color]="arr_on_row_click?.color">
                                 {{arr_on_row_click?.short_name}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
@@ -342,7 +354,8 @@
                             </td>
                             <td>
                                 <div class="basic-info-content">
-                                    <div class="circle" id="lg{{row.id}}" [style.background-color]="row.color">{{row.short_name}}</div>
+                                    <div class="circle" id="lg{{row.id}}" [style.background-color]="row.color">
+                                        {{row.short_name}}</div>
                                     <div class="name-email-div">
                                         <div>
                                             {{row.full_name}}
@@ -353,7 +366,9 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><div>{{row.company}}</div></td>
+                            <td>
+                                <div>{{row.company}}</div>
+                            </td>
                             <td (click)="onAddContact(row,'Edit',i)"><i class='bx bx-edit-alt'></i></td>
                         </tr>
                     </ng-container>
@@ -363,7 +378,8 @@
                 <div class="contact-col-details">
                     <div class="contact-details">
                         <div>
-                            <div class="contact-details-circle" id="contact-circle-lg" [style.background-color]="arr_on_row_click?.color">
+                            <div class="contact-details-circle" id="contact-circle-lg"
+                                [style.background-color]="arr_on_row_click?.color">
                                 {{arr_on_row_click?.short_name}}</div>
                             <div class="contact-details-name">{{arr_on_row_click?.full_name}}</div>
                             <div class="contact-details-role">{{arr_on_row_click?.role}}</div>
