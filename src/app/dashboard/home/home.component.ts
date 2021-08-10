@@ -8,6 +8,7 @@ import { RouteConstants } from 'src/app/layout/route-constants';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  sidebar: any;
 
   constructor(public router: Router, public routeConstants: RouteConstants) {
 
@@ -17,9 +18,9 @@ export class HomeComponent implements OnInit {
   }
   btnClick() {
     let btn = document.querySelector("#btn");
-    var sidebar = document.querySelector(".sidebar");
-     if(sidebar != null){
-      sidebar.classList.toggle("active");
+     this.sidebar = document.querySelector(".sidebar");
+     if(this.sidebar != null){
+      this.sidebar.classList.toggle("active");
      }
   }
   

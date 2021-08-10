@@ -28,18 +28,6 @@ body{
         padding: 1% 0%;
         transition: all 0.4s ease;
     }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
-    }
     .sidebar .logo_content .logo{
         color: #ffffff;
         display: flex;
@@ -63,9 +51,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -102,14 +87,6 @@ body{
         text-align: center;
         font-size: 16px;
     }
-    .sidebar.active ul li a i{
-        height: 6rem;
-        min-width: 4.5rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
-    }
     .home_content{
         position:absolute;
         height: 100%;
@@ -120,10 +97,6 @@ body{
     .home_content .text{
         /* margin: 1%; */
         color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
     }
     .home_content .hr-line{
         margin-top: 10%;
@@ -146,18 +119,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%;  */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -182,9 +143,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -221,14 +179,6 @@ body{
         text-align: center;
         font-size: 16px;
     }
-    .sidebar.active ul li a i{
-        height: 6rem;
-        min-width: 6rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
-    }
     .home_content{
         position:absolute;
         height: 100%;
@@ -239,10 +189,6 @@ body{
     .home_content .text{
         /* margin: 1%; */
         color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
     }
     .home_content .hr-line{
         margin-top: 10%;
@@ -265,18 +211,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%;  */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 42%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -301,9 +235,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -340,14 +271,6 @@ body{
         text-align: center;
         font-size: 16px;
     }
-    .sidebar.active ul li a i{
-        height: 6rem;
-        min-width: 7rem;
-        line-height: 6rem;
-        border-radius: 12px;
-        text-align: center;
-        font-size: 16px;
-    }
     .home_content{
         position:absolute;
         height: 100%;
@@ -358,10 +281,6 @@ body{
     .home_content .text{
         /* margin: 1%; */
         color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 42%);
-        left: 42%;
     }
     .home_content .hr-line{
         margin-top: 10%;
@@ -384,18 +303,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%; */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -420,9 +327,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -470,10 +374,6 @@ body{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 25%);
-        left: 25%;
-    }
     .home_content .hr-line{
         margin-top: 8%;
         height: 1px;
@@ -496,17 +396,8 @@ body{
         padding: 1% 0%;
         transition: all 0.4s ease;
     }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
     .sidebar ul li a .links_name{
         color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -531,9 +422,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -580,10 +468,6 @@ body{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 22%);
-        left: 22%;
-    }
     .home_content .hr-line{
         margin-top: 6%;
         height: 1px;
@@ -605,18 +489,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%; */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 15%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -641,9 +513,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -690,10 +559,6 @@ body{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 15%);
-        left: 15%;
-    }
     .home_content .hr-line{
         margin-top: 5%;
         height: 1px;
@@ -715,18 +580,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%; */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 15%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -751,9 +604,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -800,10 +650,6 @@ body{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 15%);
-        left: 15%;
-    }
     .home_content .hr-line{
         margin-top: 4%;
         height: 1px;
@@ -825,18 +671,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%; */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 12%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-        color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 15px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -861,9 +695,6 @@ body{
         cursor: pointer;
     }
     .sidebar ul{
-        margin-top: 35%;
-    }
-    .sidebar.active ul{
         margin-top: 35%;
     }
     .sidebar ul li{
@@ -911,10 +742,6 @@ body{
         /* margin: 1%; */
         color: #000;
     }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 12%);
-        left: 12%;
-    }
     .home_content .hr-line{
         margin-top: 4%;
         height: 1px;
@@ -936,18 +763,6 @@ body{
         /* this goes to side bar active - padding: 1% 2%; */
         padding: 1% 0%;
         transition: all 0.4s ease;
-    }
-    .sidebar.active{
-        width: 22%;
-        padding: 1% 1%;
-    }
-    .sidebar ul li a .links_name{
-       color: transparent;
-    }
-    .sidebar.active ul li a .links_name{
-        color: #ffffff;
-        font-size: 30px;
-        transition: all 0.5s ease;
     }
     .sidebar .logo_content .logo{
         color: #ffffff;
@@ -973,9 +788,6 @@ body{
     .sidebar ul{
         margin-top: 35%;
     }
-    .sidebar.active ul{
-        margin-top: 35%;
-    }
     .sidebar ul li{
         position: relative;
         /* height: 50px; */
@@ -991,15 +803,6 @@ body{
         text-decoration: none;
         transition: all 0.4s ease;
         padding: 5%;
-    }
-    .sidebar.active ul li a{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        padding: 5%;
-        justify-content: center;
     }
     .sidebar ul li a:hover{
         color: #ffffff;
@@ -1018,16 +821,6 @@ body{
         text-align: center;
         font-size: 24px;
     }
-    .sidebar.active ul li a i{
-        height: 50px;
-        min-width: 50px;
-        line-height: 50px;
-        border-radius: 12px;
-        text-align: center;
-        /* font-size: 15px; */
-        font-size: 30px;
-        padding-left: 0%;
-    }
     .home_content{
         position:absolute;
         height: 100%;
@@ -1038,10 +831,6 @@ body{
     .home_content .text{
         margin: 1%;
         color: #000;
-    }
-    .sidebar.active ~ .home_content{
-        width: calc(100% - 22%);
-        left: 22%;
     }
     .home_content .hr-line{
         margin-top: 3%;
