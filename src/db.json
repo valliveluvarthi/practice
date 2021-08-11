@@ -54,6 +54,17 @@
       "address": "address",
       "color": "#d3ace3",
       "id": 5
+    },
+    {
+      "full_name": "Jakshi y",
+      "short_name": "JY",
+      "role": "Developer",
+      "email": "jy@gmail.com",
+      "phno": "+(567)678-6758",
+      "company": "Adipiscendarum alia altera cepisse ceramico commod",
+      "address": "abest acute albam animadvertat apertam arcu assumenda beate chorusque collegi constituamus consuevit",
+      "color": "#c6f0d8",
+      "id": 6
     }
   ]
 }
