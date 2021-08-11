@@ -1,5 +1,6 @@
 .container-fluid{
   margin-bottom: 10%;
+  overflow-x: hidden;
 }
 .header-row{
     margin-left: 6%;
@@ -351,7 +352,7 @@ table tr td input{
     min-width: 20rem;
   }
 }
-@media (min-width: 320px) and (max-width: 448px) { 
+@media (min-width: 320px) and (max-width: 452px) { 
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -456,7 +457,7 @@ table tr td input{
     min-width: 20rem;
   }
 }
-@media (min-width: 448px) and (max-width: 600px){ 
+@media (min-width: 452px) and (max-width: 600px){ 
   .container {
     padding-right: 0;
     padding-left: 0;
