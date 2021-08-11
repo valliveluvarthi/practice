@@ -318,8 +318,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 16%);
-        left: 16%;
+        width: calc(100% - 20%);
+        left: 20%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -410,8 +410,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 9%);
-        left: 9%;
+        width: calc(100% - 10%);
+        left: 10%;
         transition: all 0.5s ease;
     }
     .home_content .text{
