@@ -706,6 +706,13 @@ table tr td input{
   }
 }
 @media only screen and (min-width: 992px) {
+  .table{
+    width: 100%!important;
+    table-layout: auto;
+    border-collapse: collapse;width: 100%!important;
+    table-layout: auto;
+    border-collapse: collapse;
+  }
   .column2{
     margin-top: 0;
   }
@@ -715,8 +722,19 @@ table tr td input{
   .content-row .col-md-offset-1 {
     margin-left: 3.333333%;
   }
+  table .company-header{
+    width: 100%;
+  }
+  .table-scroll .company-header{
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1200px) {
+  .table{
+    width: 100%!important;
+    table-layout: auto;
+    border-collapse: collapse;
+  }
   .column2{
     margin-top: 0;
   }
@@ -725,6 +743,12 @@ table tr td input{
   }
   .content-row .col-lg-offset-1 {
     margin-left: 3.333333%;
+  }
+  table .company-header{
+    width: 100%;
+  }
+  .table-scroll .company-header{
+    width: 100%;
   }
 }
 
