@@ -21,3 +21,8 @@
 .btn-default{
     float: right;
 }
+::ng-deep snack-bar-container simple-snack-bar .mat-simple-snackbar-action {
+    color: #ffffff;
+    background: rgb(110, 109, 107);
+    border-radius: 2px;
+  }

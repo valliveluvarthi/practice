@@ -83,7 +83,7 @@ export class AddcontactComponent implements OnInit {
         this.dashboardService.postContacts(obj).subscribe((result: any) => {
           this.dialogRef.close();
           this.modalForm.reset();
-          this.snackbar.open("Contact added successfully!", "", {
+          this.snackbar.open("Contact added successfully!", "Undo", {
             duration: 1000,
           });
         });
@@ -92,14 +92,14 @@ export class AddcontactComponent implements OnInit {
         this.dashboardService.updateContacts(obj, this.data.row.id).subscribe((result: any) => {
           this.dialogRef.close();
           this.modalForm.reset();
-          this.snackbar.open("Contact updates successfully!", "", {
+          this.snackbar.open("Contact updates successfully!", "Undo", {
             duration: 1000,
           });
         });
       }else{
         this.dialogRef.close();
-        this.snackbar.open("No changes made to the contact!", "", {
-          duration: 1000,
+        this.snackbar.open("No changes made to the contact!", "Undo", {
+          duration: 1000
         });
       }
     }else{
