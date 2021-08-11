@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AddContactModule } from './dashboard/contacts/addcontact/addcontact.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import * as $ from 'jquery';
 @NgModule({
   declarations: [
     AppComponent,

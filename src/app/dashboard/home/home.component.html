@@ -1,8 +1,8 @@
 <div class="wrapper">
     <div *ngIf="showSideNav()" class="sidebar">
         <div class="logo_content">
-            <div class="logo">
-                <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
+            <div class="logo" (click)="btnClick()">
+                <i class='bx bx-menu-alt-left' id="btn"></i>
             </div>
         </div>
         <ul *ngIf="sidebar?.classList?.value.includes('active')" class="nav_list">
@@ -45,7 +45,7 @@
             </li>
         </ul>
     </div>
-    <!-- <div *ngIf="inner_width > 450" class="sidebar">
+    <div *ngIf="outer_width > 455" class="sidebar"> 
         <div class="logo_content">
             <div class="logo">
                 <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
@@ -90,11 +90,14 @@
                 </a>
             </li>
         </ul>
-    </div> -->
+    </div> 
+     <hr class="hr-line"/>
     <div class="home_content">
+        <hr class="hr-line"/>
         <div class="container-fluid text">
-            <hr class="hr-line"/>
-            <router-outlet></router-outlet>
+            <div class="router-content">
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
 </div>
