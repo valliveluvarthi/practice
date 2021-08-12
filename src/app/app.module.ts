@@ -9,7 +9,6 @@ import {LayoutModule} from './layout/layout.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './dashboard/home/home.component';
-import { ContactsComponent } from './dashboard/contacts/contacts.component';
 import {AppBootstrapModule} from './app-bootstrap.module';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
@@ -18,14 +17,12 @@ import {FieldToDisplayPipe} from './dashboard/field-to-display.pipe';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AddContactModule } from './dashboard/contacts/addcontact/addcontact.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import * as $ from 'jquery';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactsComponent,
     FieldToDisplayPipe
   ],
   imports: [
@@ -45,7 +42,6 @@ import * as $ from 'jquery';
     MatCheckboxModule,
     HttpClientModule,
     MatDialogModule,
-    AddContactModule,
     MatSnackBarModule,
   ],
   providers: [],

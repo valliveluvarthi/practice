@@ -1,4 +1,4 @@
-import { ContactsComponent } from "./contacts/contacts.component";
+import { CalenderComponent } from "./calender/calender.component";
 import { HomeComponent } from "./home/home.component";
 export const DASHBOARD_ROUTES = [
     {
@@ -6,8 +6,8 @@ export const DASHBOARD_ROUTES = [
         component: HomeComponent,
         children: [
             {
-                path: 'contacts',
-                component: ContactsComponent
+                path: 'calender',
+                component: CalenderComponent
             },
         ]
     },

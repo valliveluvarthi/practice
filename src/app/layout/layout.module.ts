@@ -7,7 +7,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import {SharedModule} from '../auth/shared.module';
 import {RouteConstants} from './route-constants';
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import {RouteConstants} from './route-constants';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    SharedModule,
   ],
   exports: [
     MatButtonModule,

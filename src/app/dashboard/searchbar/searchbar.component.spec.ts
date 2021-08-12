@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChangeemailComponent } from './changeemail.component';
+import { SearchbarComponent } from './searchbar.component';
 
-describe('ChangeemailComponent', () => {
-  let component: ChangeemailComponent;
-  let fixture: ComponentFixture<ChangeemailComponent>;
+describe('SearchbarComponent', () => {
+  let component: SearchbarComponent;
+  let fixture: ComponentFixture<SearchbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChangeemailComponent ]
+      declarations: [ SearchbarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChangeemailComponent);
+    fixture = TestBed.createComponent(SearchbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

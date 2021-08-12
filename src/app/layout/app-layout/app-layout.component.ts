@@ -8,15 +8,11 @@ import { RouteConstants } from '../route-constants';
   styleUrls: ['./app-layout.component.css']
 })
 export class AppLayoutComponent implements OnInit {
-  year: number;
-
   constructor(public router: Router,public routeConstants: RouteConstants) {
- 
   }
     
   ngOnInit() {
-    this.year = new Date().getFullYear();
-    this.router.navigateByUrl(this.routeConstants.user_login);
+    this.router.navigateByUrl(this.routeConstants.dashboard);
   }
   
  
