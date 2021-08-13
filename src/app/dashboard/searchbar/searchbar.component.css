@@ -1,0 +1,14 @@
+@media(max-width: 320px) {
+    .searchbar-wrapper{
+        position: absolute;
+        left: 9%;
+        transition: all 0.5s ease;
+    }
+}
+@media (min-width: 320px) and (max-width: 455px) {
+    .searchbar-wrapper{
+        position: absolute;
+        left: 9%;
+        transition: all 0.5s ease;
+    }
+}

@@ -8,27 +8,25 @@ import { RouterModule } from '@angular/router';
 import {LayoutModule} from './layout/layout.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './dashboard/home/home.component';
 import {AppBootstrapModule} from './app-bootstrap.module';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {FieldToDisplayPipe} from './dashboard/field-to-display.pipe';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import * as $ from 'jquery';
+import {DashboardModule} from './dashboard/dashboard.module';
+import { RouterTestingModule } from '@angular/router/testing';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    FieldToDisplayPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
+    DashboardModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(APP_ROUTES, {
@@ -43,6 +41,7 @@ import * as $ from 'jquery';
     HttpClientModule,
     MatDialogModule,
     MatSnackBarModule,
+    RouterTestingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

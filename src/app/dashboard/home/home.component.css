@@ -253,12 +253,6 @@ body{
         min-width: 4rem;
         background: #263059;
     }
-    .search-bar-component{
-        position: absolute;
-        width: calc(100% - 9%);
-        left: 9%;
-        transition: all 0.5s ease;
-    }
 }
 /* width above 455px  */
 @media (min-width: 455px){

@@ -21,6 +21,7 @@ import { CalenderComponent } from './calender/calender.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { SearchroomComponent } from './searchroom/searchroom.component';
 import { AvailableroomsComponent } from './availablerooms/availablerooms.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [HomeComponent,FieldToDisplayPipe, CalenderComponent, SearchbarComponent, SearchroomComponent, AvailableroomsComponent],
   imports: [
@@ -38,7 +39,8 @@ import { AvailableroomsComponent } from './availablerooms/availablerooms.compone
     MatCheckboxModule,
     MatCardModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    RouterModule,
   ],
   entryComponents: [
     
@@ -50,6 +52,7 @@ import { AvailableroomsComponent } from './availablerooms/availablerooms.compone
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    SearchbarComponent,
   ],
   providers : [DashboardService]
 })
