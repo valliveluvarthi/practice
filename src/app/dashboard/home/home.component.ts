@@ -23,11 +23,7 @@ export class HomeComponent implements OnInit {
     this.outer_width = 1024;
   }
   btnClick() {
-    let btn = document.querySelector("#btn");
     this.sidebar = document.querySelector(".sidebar");
-    let color1 = "#b86c39";
-    let color2 = "#b64da4";
-    let color3 = "#f32170";
     if (this.sidebar != null) {
       this.sidebar.classList.toggle("active");
     }

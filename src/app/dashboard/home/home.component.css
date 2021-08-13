@@ -121,6 +121,18 @@ body{
         left: 20%;
         transition: all 0.5s ease;
     }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+        cursor: pointer;
+    }
 }
 /* width above 320px and below 450px  */
 @media (min-width: 320px) and (max-width: 455px) {
@@ -226,8 +238,25 @@ body{
         z-index: -1;
     }
     .sidebar.active ~ .home_content{
-        width: calc(100% - 20%);
-        left: 20%;
+        width: calc(100% - 16%);
+        left: 16%;
+        transition: all 0.5s ease;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+    }
+    .search-bar-component{
+        position: absolute;
+        width: calc(100% - 9%);
+        left: 9%;
         transition: all 0.5s ease;
     }
 }
@@ -328,6 +357,17 @@ body{
         /* margin: 1%; */
         color: #000;
     }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+    }
 }
 /* width above 600px */
 @media only screen and (min-width: 600px) {
@@ -426,6 +466,17 @@ body{
         /* margin: 1%; */
         color: #000;
     }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+    }
 }
 /* width above 768px */
 @media only screen and (min-width: 768px) {
@@ -453,6 +504,7 @@ body{
         width: 5rem;
         justify-content: center;
         transition: all 0.5s ease;
+        margin: auto;
     }
     .sidebar #btn{
         position: absolute;
@@ -525,6 +577,17 @@ body{
     .home_content .text{
         /* margin: 1%; */
         color: #000;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
     }
 } 
 /* width above 992px */
@@ -623,6 +686,17 @@ body{
         /* margin: 1%; */
         color: #000;
     }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+    }
 }
 /* width above 1200px */
 @media only screen and (min-width: 1200px) {
@@ -719,6 +793,17 @@ body{
     .home_content .text{
         /* margin: 1%; */
         color: #000;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
     }
 }
 /* width above 1330px */
@@ -818,6 +903,17 @@ body{
         /* margin: 1%; */
         color: #000;
     }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
+    }
 }
 /* width above 1584px */
 @media only screen and (min-width: 1584px) {
@@ -913,5 +1009,16 @@ body{
     .home_content .text{
         margin: 1%;
         color: #000;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #263059;
     }
 }

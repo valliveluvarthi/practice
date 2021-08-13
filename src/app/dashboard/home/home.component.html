@@ -2,7 +2,8 @@
     <div *ngIf="showSideNav()" class="sidebar">
         <div class="logo_content">
             <div class="logo" (click)="btnClick()">
-                <i class='bx bx-menu-alt-left' id="btn"></i>
+                <div class="circle">
+                    CHM</div>
             </div>
         </div>
         <ul *ngIf="sidebar?.classList?.value.includes('active')" class="nav_list">
@@ -48,7 +49,8 @@
     <div *ngIf="outer_width > 455" class="sidebar"> 
         <div class="logo_content">
             <div class="logo">
-                <i class='bx bx-menu-alt-left' id="btn" (click)="btnClick()"></i>
+                <div class="circle" (click)="btnClick()">
+                    CHM</div>
             </div>
         </div>
         <ul class="nav_list">
