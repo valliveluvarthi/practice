@@ -32,11 +32,7 @@ export class HomeComponent implements OnInit {
       this.sidebar.classList.toggle("active");
     }
     if (this.sidebar.classList.value.includes('active')) {
-      this.sidebar.style.background =
-        "linear-gradient(to bottom, "
-        + color1 + ", "
-        + color2 + ", "
-        + color3 + ")";
+      this.sidebar.style.background = "#F4F6FA";
     }else{
       this.sidebar.style.background = "";
     }
