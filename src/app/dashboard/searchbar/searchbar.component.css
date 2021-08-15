@@ -1,14 +1,104 @@
-@media(max-width: 320px) {
+@media (max-width: 455px) {
     .searchbar-wrapper{
         position: absolute;
-        left: 9%;
+        width: 100%;
+        margin: auto;
+        margin-top: 3%;
+        background: #FFFFFF;
         transition: all 0.5s ease;
     }
-}
-@media (min-width: 320px) and (max-width: 455px) {
-    .searchbar-wrapper{
-        position: absolute;
-        left: 9%;
-        transition: all 0.5s ease;
+    .searchbar-row{
+        margin: 0;
+        padding: 0;
+    }
+    .col-xs-12{
+        padding-left: 0;
+    }
+    
+    .input-group-addon {
+        padding: 6px 12px;
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1;
+        color: #555;
+        text-align: center;
+        background-color: #F4F6FA;
+        border: 1px solid transparent;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 1.2rem;
+        line-height: 1.42857143;
+        color: #A2A4AA;
+        background-color: #F4F6FA;
+        background-image: none;
+        border-radius: 4px;
+        border: none;
+        box-shadow: none;
+    }
+    .fa{
+        color: #AAACB0;
+    }
+    .material-icons{
+        color: #AAACB0;
+        font-size: 2rem;
+    }
+    .badge {
+        position: relative;
+        top: -4rem;
+        left: 0.3rem;
+        border-radius: 50%;
+        color: #32B8E5;
+        background: transparent;
+        font-size: 3rem;
+    }
+    .notification-icon{
+        padding-left: 0;
+    }
+    .col-xs-1,.col-xs-9{
+        margin-top: 3%;
+    }
+    .sub-row-circle-div{
+        padding: 0;
+        padding-left: 1rem;
+        width: 26.6%;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 4rem;
+        min-width: 4rem;
+        background: #B3CFC3;
+        cursor: pointer;
+    }
+    .sub-row-text-div{
+        padding: 0;
+        padding-left: 1rem;
+        width: 60.333333%;
+    }
+    .sub-row-menu-div{
+        width: 10%;
+        padding: 0;
+    }
+    .glyphicon-menu-down{
+        position: relative;
+        top: 1.2rem;
+        display: inline-block;
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        color: #73737E;
+        font-size: 1.5rem;
+    }
+    img{
+        width: 2rem;
     }
 }

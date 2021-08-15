@@ -44,4 +44,11 @@ export class HomeComponent implements OnInit {
       return false;
     }
   }
+  showSideNavAlways(){
+    if (this.outer_width >= 455) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
