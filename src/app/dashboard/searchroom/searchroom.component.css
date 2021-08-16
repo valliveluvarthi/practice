@@ -1,7 +1,7 @@
 @media (max-width : 455px) {
     .srearch-room-wrapper{
         position: absolute;
-        top: 16rem;
+        top: 12rem;
         padding: 1rem;
         border: 1px solid #e1e4e2;
         border-radius: 0.5rem;
@@ -133,5 +133,53 @@
         width: 100%;
         border-radius: 2rem;
         padding: 1rem;
+    }
+    .last-reserve-panel{
+        top: 66rem;
+        position: absolute;
+    }
+    .last-reservation-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .last-reservation-text{
+        min-width: 26rem;
+    }
+    .last-reserve-panel .last-reservation-text,.menu-icon{
+        font-size: large;
+        font-weight: bold;
+    }
+    .room-details{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .room-details .image-div .img-rounded {
+        border-radius: 6px;
+        width: 10rem;
+        height: 7rem;
+    }
+    .room-details .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details .date-range{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-weight: 700;
+    }
+    .room-details .chevron-right{
+        align-self: center;
+        padding-left: 2rem;
     }
 }
