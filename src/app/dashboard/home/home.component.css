@@ -111,14 +111,14 @@ body{
     .home_content{
         position: absolute;
         height: 100%;
-        width: calc(100% - 16%);
-        left: 16%;
+        width: calc(100% - 0%);
+        left: 0%;
         transition: all 0.5s ease;
         z-index: -1;
     }
     .sidebar.active ~ .home_content{
         width: calc(100% - 16%);
-        left: 16%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .circle{
@@ -232,14 +232,14 @@ body{
     .home_content{
         position: absolute;
         height: 100%;
-        width: calc(100% - 16%);
-        left: 16%;
+        width: calc(100% - 0%);
+        left: 0%;
         transition: all 0.5s ease;
         z-index: -1;
     }
     .sidebar.active ~ .home_content{
         width: calc(100% - 16%);
-        left: 16%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .circle{

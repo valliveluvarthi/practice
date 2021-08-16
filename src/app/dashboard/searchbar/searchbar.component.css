@@ -9,6 +9,7 @@
         margin-top: 3%;
         background: #FFFFFF;
         transition: all 0.5s ease;
+        left: 22%;
     }
     .search-container{
         padding: 0;
@@ -64,6 +65,7 @@
     }
     .col-xs-1{
         width : 12.333333%;
+        padding-left: 0;
     }
     .col-xs-9{
         padding-left: 3%;

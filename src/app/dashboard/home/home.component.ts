@@ -29,8 +29,10 @@ export class HomeComponent implements OnInit {
     }
     if (this.sidebar.classList.value.includes('active')) {
       this.sidebar.style.background = "#F4F6FA";
+      localStorage.setItem("is_sidebar_active", "active");
     }else{
       this.sidebar.style.background = "";
+      localStorage.setItem("is_sidebar_active", "");
     }
   }
   onResize(event) {
