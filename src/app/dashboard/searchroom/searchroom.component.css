@@ -1,12 +1,7 @@
 @media (max-width : 455px) {
     .srearch-room-wrapper{
         position: absolute;
-        top: 12rem;
-        left: 5%;
-    }
-    .srearch-room-wrapper-active{
-        position: absolute;
-        top: 12rem;
-        left: 22%;
+        top: 15rem;
+        padding: 0;
     }
 }

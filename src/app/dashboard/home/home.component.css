@@ -119,7 +119,7 @@ body{
     }
     .sidebar.active ~ .home_content{
         width: calc(100% - 16%);
-        left: 0%;
+        left: 16%;
         transition: all 0.5s ease;
     }
     .circle{
@@ -241,7 +241,7 @@ body{
     }
     .sidebar.active ~ .home_content{
         width: calc(100% - 16%);
-        left: 0%;
+        left: 16%;
         transition: all 0.5s ease;
     }
     .circle{
