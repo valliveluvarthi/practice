@@ -1,0 +1,6 @@
+@media (max-width : 455px) {
+    .srearch-room-wrapper{
+        position: absolute;
+        top: 12rem;
+    }
+}

@@ -9,7 +9,6 @@
         margin-top: 3%;
         background: #FFFFFF;
         transition: all 0.5s ease;
-        left: 15%;
     }
     .search-container{
         padding: 0;
@@ -27,6 +26,9 @@
         text-align: center;
         background-color: #F4F6FA;
         border: 1px solid transparent;
+    }
+    .col-xs-12{
+        padding-left: 0;
     }
     .form-control {
         display: block;
@@ -68,7 +70,7 @@
     }
     .sub-row-circle-div{
         padding: 0;
-        padding-left: 2rem;
+        padding-left: 1rem;
         width: 26.6%;
     }
     .circle{
@@ -108,6 +110,9 @@
     }
 }
 @media (min-width: 455px) and (max-width: 600px){
+    .container-fluid{
+        padding: 0;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
@@ -115,7 +120,6 @@
         margin-top: 3%;
         background: #FFFFFF;
         transition: all 0.5s ease;
-        left: 12%;
     }
     .search-container{
         padding: 0;
@@ -133,6 +137,9 @@
         text-align: center;
         background-color: #F4F6FA;
         border: 1px solid transparent;
+    }
+    .col-xs-12{
+        padding-left : 0;
     }
     .form-control {
         display: block;
@@ -211,13 +218,15 @@
     }
 }
 @media (min-width: 600px) and (max-width: 709px){
+    .container-fluid{
+        padding-left: 0;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
         margin: auto;
         margin-top: 3%;
         transition: all 0.5s ease;
-        left: 9%;
     }
     .search-container{
         padding: 0;
@@ -243,7 +252,7 @@
         display: block;
         width: 100%;
         padding: 6px 12px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.42857143;
         color: #A2A4AA;
         background-color: #F4F6FA;
@@ -277,7 +286,7 @@
         padding-left: 0;
     }
     .col-xs-9 {
-        width: 30%;
+        width: 35%;
         padding-left: 1rem;
         padding-right: 0;
         margin-top: 0;
@@ -325,13 +334,15 @@
     }
 }
 @media (min-width: 709px) and (max-width: 768px){
+    .container-fluid{
+        padding: 0;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
         margin: auto;
         margin-top: 3%;
         transition: all 0.5s ease;
-        left: 9%;
     }
     .search-container{
         padding: 0;
@@ -441,28 +452,30 @@
 @media (min-width: 739px) and (max-width: 768px){
     .badge {
         position: relative;
-        top: -1.3rem;
-        left: -1rem;
+        top: -4.1rem;
+        left: 0.3rem;
         border-radius: 50%;
         color: #32B8E5;
         background: transparent;
         font-size: 3rem;
     }
     .col-xs-1{
-        margin-top: 0;
+        margin-top: 1%;
     }
     .notification-icon{
         margin-top: 1%;
     }
 }
 @media (min-width : 768px) and (max-width: 992px){
+    .container-fluid{
+        padding: 0;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
         margin: auto;
         margin-top: 3%;
         transition: all 0.5s ease;
-        left: 7.5%;
     }
     .search-container{
         width: 100%;
@@ -478,7 +491,7 @@
         border: 1px solid transparent;
     }
     .col-sm-6 {
-        width: 55%;
+        width: 50%;
     }
     .form-control {
         display: block;
@@ -558,6 +571,20 @@
         padding: 0;
     }
 }
+@media (min-width: 880px) {
+    .envelope-div{
+        margin-top: 0;
+    }
+    .badge{
+        position: relative;
+        top: -1.2rem;
+        left: -1.1rem;
+        border-radius: 50%;
+        color: #32B8E5;
+        background: transparent;
+        font-size: 3rem;
+    }
+}
 @media (min-width: 912px) and (max-width: 992px){
     .badge {
         position: relative;
@@ -585,13 +612,15 @@
     }
 }
 @media (min-width : 992px){
+    .container-fluid{
+        padding: 0;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
         margin: auto;
         margin-top: 3%;
         transition: all 0.5s ease;
-        left: 6%;
     }
     .search-container{
         width: 100%;
@@ -607,7 +636,7 @@
         border: 1px solid transparent;
     }
     .col-md-6 {
-        width: 60%;
+        width: 55%;
     }
     .form-control {
         display: block;
@@ -693,6 +722,20 @@
         padding: 0;
     }
 }
+@media (min-width: 1031px) {
+    .envelope-div{
+        margin-top: 0;
+    }
+    .badge{
+        position: relative;
+        top: -1.2rem;
+        left: -1rem;
+        border-radius: 50%;
+        color: #32B8E5;
+        background: transparent;
+        font-size: 3rem;
+    }
+}
 @media (min-width: 1061px) {
     .envelope-div{
         margin-top: 0;
@@ -721,13 +764,16 @@
     }
 }
 @media (min-width: 1198px) {
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 3rem;
+    }
     .searchbar-wrapper{
         position: absolute;
         width: 100%;
         margin: auto;
         margin-top: 3%;
         transition: all 0.5s ease;
-        left: 5%;
     }
     .search-container{
         width: 100%;
