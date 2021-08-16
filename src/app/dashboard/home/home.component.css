@@ -262,7 +262,7 @@ body{
         left: 0;
         height: 100%;
          /* this goes to side bar active - width: 15%;  */
-        width: 16%;
+        width: 14%;
          /* background-color: #000000;  */
          background: #F4F6FA;
         /* this goes to side bar active - padding: 1% 2%;  */
@@ -344,7 +344,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 16%);
-        left: 16%;
+        left: 5%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -452,8 +452,8 @@ body{
     .home_content{
         position:absolute;
         height: 100%;
-        width: calc(100% - 9%);
-        left: 9%;
+        width: calc(100% - 0%);
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -565,7 +565,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 7.5%);
-        left: 7.5%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -673,7 +673,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 6%);
-        left: 6%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -781,7 +781,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 5%);
-        left: 5%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -890,7 +890,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 5%);
-        left: 5%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
@@ -997,7 +997,7 @@ body{
         position:absolute;
         height: 100%;
         width: calc(100% - 7%);
-        left: 7%;
+        left: 0%;
         transition: all 0.5s ease;
     }
     .home_content .text{
