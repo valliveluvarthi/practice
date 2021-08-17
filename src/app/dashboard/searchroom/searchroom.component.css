@@ -1,4 +1,7 @@
-@media (max-width : 455px) {
+@media (max-width : 768px) {
+    .container-fluid{
+        padding: 0;
+    }
     .srearch-room-wrapper{
         position: absolute;
         top: 12rem;
@@ -6,11 +9,14 @@
         border: 1px solid #e1e4e2;
         border-radius: 0.5rem;
     }
+    .block-header{
+        margin-top: 1.5rem;
+    }
     .searchroom-header{
         color: #090E22;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: large;
+        font-size: 2rem;
     }
     .searchroom-header-tag{
         color: #94969D;
@@ -27,8 +33,6 @@
     .date-row{
         margin-left: 0.1rem;
         margin-top: 2.5rem;
-        border-bottom: 1px solid #E8EAEE;
-        padding-bottom: 2rem;
     }
     .check-in-out-row{
         display: flex;
@@ -72,17 +76,13 @@
     }
     .people-text{
         color: #2A2E3E;
-        font-size: medium;
+        font-size: 1.5rem;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
     }
     .desc-text{
         color: #A5A7AC;
-        font-size: small;
-    }
-    .rooms-row{
-        border-bottom: 1px solid #E8EAEE;
-        padding-bottom: 2rem;
+        font-size: 1rem;
     }
     .rooms-count-col{
         display: flex;
@@ -92,16 +92,16 @@
     }
     .rooms-count-col .glyphicon-minus-sign{
         color: #D9E7FD;
-        min-width: 3rem;
-        font-size: large;
+        width: 3.5rem;
+        font-size: 2rem;
     }
     .rooms-count-col .glyphicon-plus-sign{
         color: #D9E7FD;
-        min-width: 3rem;
-        font-size: large;
+        width: 3rem;
+        font-size: 2rem;
     }
     .room-text{
-        min-width: 2.5rem;
+        width: 2.5rem;
     }
     .room-type-col{
         margin-top: 2rem;
@@ -114,7 +114,7 @@
     }
     .room-type{
         color: #A9AAB3;
-        font-size: small;
+        font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
     }
     .room-type-name{
@@ -146,7 +146,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .last-reservation-text{
-        min-width: 24rem;
+        width: 24rem;
     }
     .last-reserve-panel .last-reservation-text,.menu-icon{
         font-size: large;
@@ -160,6 +160,9 @@
         justify-content: space-around;
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 3rem;
+    }
+    .room-details-text-div{
+        margin-left: 1rem;
     }
     .room-details .image-div .img-rounded {
         border-radius: 6px;
@@ -182,5 +185,636 @@
     .room-details .chevron-right{
         align-self: center;
         padding-left: 2rem;
+    }
+}
+@media (min-width : 768px) and (max-width: 992px){
+    .srearch-room-wrapper{
+        position: absolute;
+        top: 10rem;
+        padding: 1rem;
+        border: 1px solid #e1e4e2;
+        border-radius: 0.5rem;
+    }
+    .searchroom-container{
+        width: 32rem;
+    }
+    .block-header{
+        margin-top: 1.5rem;
+    }
+    .block-header .col-sm-6{
+        width: 100%;
+    }
+    .searchroom-header{
+        color: #090E22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .searchroom-header-tag{
+        color: #94969D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+    .date-row{
+        margin-left: 0.1rem;
+        margin-top: 2.5rem;
+    }
+    .date-row .col-sm-6{
+        width: 100%;
+    }
+    .check-in-out-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .check-in-out-row .col-sm-3{
+        background: #E8EAEE;
+        padding: 0.5rem;
+        padding-left: 0.8rem;
+        border-radius: 0.5rem;
+    }
+    .check-in-col{
+        margin-right: 0.5rem;
+        width: 14rem;
+    }
+    .check-out-col{
+        margin-left: 0.5rem;
+        width: 14rem;
+    }
+    .check-in-text{
+        color: #B3B4BD;
+    }
+    .date-text{
+        color: #484C58;
+        font-weight: bold;
+    }
+    .no-of-rooms-row{
+        margin-left: 0.1rem;
+        margin-top: 2rem;
+    }
+    .no-of-rooms-row .col-sm-6 {
+        width: 100%;
+    }
+    .people-number-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    .people-number-row .col-sm-3{
+     width: 100%;   
+    }
+    .people-col{
+        margin-right: 0.5rem;
+    }
+    .number-col{
+        margin-left: 0.5rem;
+    }
+    .people-number-row .col-sm-3{
+        padding: 0;
+    }
+    .people-text{
+        color: #2A2E3E;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .desc-text{
+        color: #A5A7AC;
+        font-size: 1rem;
+    }
+    .rooms-count-col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .rooms-count-col .glyphicon-minus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .rooms-count-col .glyphicon-plus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .room-text{
+        width: 2.5rem;
+    }
+    .room-type-col{
+        margin-top: 2rem;
+    }
+    .room-type-col .col-sm-6{
+        width: 93%;
+        background: #E8EAEE;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-left: 1rem;
+    }
+    .room-type{
+        color: #A9AAB3;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .room-type-name{
+        color: #454B5F;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .search-button-col{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .search-button-col .col-sm-6{
+        width: 100%;
+    }
+    .search-button-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        width: 100%;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .last-reserve-panel{
+        top: 66rem;
+        position: absolute;
+    }
+    .last-reserve-panel .container{
+        width: 34rem;
+    }
+    .last-reserve-panel .col-sm-6{
+        width: 100%;
+    }
+    .last-reservation-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .last-reservation-text{
+        width: 28rem;
+    }
+    .last-reserve-panel .last-reservation-text,.menu-icon{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .room-details{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    .room-details-text-div{
+        margin-left: 2rem;
+    }
+    .room-details .image-div .img-rounded {
+        border-radius: 6px;
+        width: 10rem;
+        height: 7rem;
+    }
+    .room-details .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details .date-range{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-weight: 700;
+    }
+    .room-details .chevron-right{
+        align-self: center;
+        padding-left: 5rem;
+    }
+}
+@media (min-width : 992px) and (max-width: 1200px){
+    .srearch-room-wrapper{
+        position: absolute;
+        top: 10rem;
+        padding: 1rem;
+        border: 1px solid #e1e4e2;
+        border-radius: 0.5rem;
+    }
+    .searchroom-container{
+        width: 28rem;
+    }
+    .block-header{
+        margin-top: 1.5rem;
+    }
+    .block-header .col-md-6{
+        width: 100%;
+    }
+    .searchroom-header{
+        color: #090E22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .searchroom-header-tag{
+        color: #94969D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .date-row{
+        margin-left: 0.1rem;
+        margin-top: 2.5rem;
+    }
+    .date-row .col-md-6{
+        width: 100%;
+    }
+    .check-in-out-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .check-in-out-row .col-md-3{
+        background: #E8EAEE;
+        padding: 0.5rem;
+        padding-left: 0.8rem;
+        border-radius: 0.5rem;
+    }
+    .check-in-col{
+        margin-right: 0.5rem;
+        width: 12rem;
+    }
+    .check-out-col{
+        margin-left: 0.5rem;
+        width: 12rem;
+    }
+    .check-in-text{
+        color: #B3B4BD;
+    }
+    .date-text{
+        color: #484C58;
+        font-weight: bold;
+    }
+    .no-of-rooms-row{
+        margin-left: 0.1rem;
+        margin-top: 2rem;
+    }
+    .no-of-rooms-row .col-md-6 {
+        width: 100%;
+    }
+    .people-number-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    .people-number-row .col-md-3{
+     width: 100%;   
+    }
+    .people-col{
+        margin-right: 0.5rem;
+    }
+    .number-col{
+        margin-left: 0.5rem;
+    }
+    .people-number-row .col-md-3{
+        padding: 0;
+    }
+    .people-text{
+        color: #2A2E3E;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .desc-text{
+        color: #A5A7AC;
+        font-size: 1rem;
+    }
+    .rooms-count-col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .rooms-count-col .glyphicon-minus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .rooms-count-col .glyphicon-plus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .room-text{
+        width: 2.5rem;
+    }
+    .room-type-col{
+        margin-top: 2rem;
+    }
+    .room-type-col .col-md-6{
+        width: 93%;
+        background: #E8EAEE;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-left: 1rem;
+    }
+    .room-type{
+        color: #A9AAB3;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .room-type-name{
+        color: #454B5F;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .search-button-col{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .search-button-col .col-md-6{
+        width: 100%;
+    }
+    .search-button-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        width: 100%;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .last-reserve-panel{
+        top: 66rem;
+        position: absolute;
+    }
+    .last-reserve-panel .container{
+        width: 30rem;
+    }
+    .last-reserve-panel .col-md-6{
+        width: 100%;
+    }
+    .last-reservation-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .last-reservation-text{
+        width: 25rem;
+    }
+    .last-reserve-panel .last-reservation-text,.menu-icon{
+        font-size: large;
+        font-weight: bold;
+    }
+    .room-details{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    .room-details-text-div{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .room-details .image-div .img-rounded {
+        border-radius: 6px;
+        width: 10rem;
+        height: 7rem;
+    }
+    .room-details .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details .date-range{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-weight: 700;
+    }
+    .room-details .chevron-right{
+        align-self: center;
+        padding-left: 6rem;
+    }
+}
+@media (min-width : 1200px){
+    .srearch-room-wrapper{
+        position: absolute;
+        top: 10rem;
+        padding: 1rem;
+        border: 1px solid #e1e4e2;
+        border-radius: 0.5rem;
+    }
+    .searchroom-container{
+        width: 28rem;
+    }
+    .block-header{
+        margin-top: 1.5rem;
+    }
+    .block-header .col-lg-6{
+        width: 100%;
+    }
+    .searchroom-header{
+        color: #090E22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .searchroom-header-tag{
+        color: #94969D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .date-row{
+        margin-left: 0.1rem;
+        margin-top: 2.5rem;
+    }
+    .date-row .col-lg-6{
+        width: 100%;
+    }
+    .check-in-out-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .check-in-out-row .col-lg-3{
+        background: #E8EAEE;
+        padding: 0.5rem;
+        padding-left: 0.8rem;
+        border-radius: 0.5rem;
+    }
+    .check-in-col{
+        margin-right: 0.5rem;
+        width: 12rem;
+    }
+    .check-out-col{
+        margin-left: 0.5rem;
+        width: 12rem;
+    }
+    .check-in-text{
+        color: #B3B4BD;
+    }
+    .date-text{
+        color: #484C58;
+        font-weight: bold;
+    }
+    .no-of-rooms-row{
+        margin-left: 0.1rem;
+        margin-top: 2rem;
+    }
+    .no-of-rooms-row .col-lg-6 {
+        width: 100%;
+    }
+    .people-number-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    .people-number-row .col-lg-3{
+     width: 100%;   
+    }
+    .people-col{
+        margin-right: 0.5rem;
+    }
+    .number-col{
+        margin-left: 0.5rem;
+    }
+    .people-number-row .col-lg-3{
+        padding: 0;
+    }
+    .people-text{
+        color: #2A2E3E;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .desc-text{
+        color: #A5A7AC;
+        font-size: 1rem;
+    }
+    .rooms-count-col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .rooms-count-col .glyphicon-minus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .rooms-count-col .glyphicon-plus-sign{
+        color: #D9E7FD;
+        width: 3rem;
+        font-size: 1.8rem;
+    }
+    .room-text{
+        width: 2.5rem;
+    }
+    .room-type-col{
+        margin-top: 2rem;
+    }
+    .room-type-col .col-lg-6{
+        width: 93%;
+        background: #E8EAEE;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-left: 1rem;
+    }
+    .room-type{
+        color: #A9AAB3;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .room-type-name{
+        color: #454B5F;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .search-button-col{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .search-button-col .col-lg-6{
+        width: 100%;
+    }
+    .search-button-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        width: 100%;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .last-reserve-panel{
+        top: 66rem;
+        position: absolute;
+    }
+    .last-reserve-panel .container{
+        width: 30rem;
+    }
+    .last-reserve-panel .col-lg-6{
+        width: 100%;
+    }
+    .last-reservation-row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .last-reservation-text{
+        width: 25rem;
+    }
+    .last-reserve-panel .last-reservation-text,.menu-icon{
+        font-size: large;
+        font-weight: bold;
+    }
+    .room-details{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 3rem;
+    }
+    .room-details-text-div{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .room-details .image-div .img-rounded {
+        border-radius: 6px;
+        width: 10rem;
+        height: 7rem;
+    }
+    .room-details .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details .date-range{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-weight: 700;
+    }
+    .room-details .chevron-right{
+        align-self: center;
+        padding-left: 6rem;
     }
 }
