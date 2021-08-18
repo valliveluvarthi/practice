@@ -198,7 +198,7 @@
         border-radius: 0.5rem;
     }
     .searchroom-container{
-        width: 32rem;
+        width: auto;
     }
     .block-header{
         margin-top: 1.5rem;
@@ -405,7 +405,7 @@
         border-radius: 0.5rem;
     }
     .searchroom-container{
-        width: 28rem;
+        width: auto;
     }
     .block-header{
         margin-top: 1.5rem;
@@ -614,7 +614,7 @@
         border-radius: 0.5rem;
     }
     .searchroom-container{
-        width: 28rem;
+        width: auto;
     }
     .block-header{
         margin-top: 1.5rem;

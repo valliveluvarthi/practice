@@ -772,8 +772,9 @@
         font-size: 1.3rem;
         width: auto;
         font-weight: bold;
-        margin-left: 2rem;
+        margin-left: 7rem;
         align-self: center;
+        margin-right: 2rem;
     }
     .reserve-col{
         padding: 0;
