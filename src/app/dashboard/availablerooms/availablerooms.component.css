@@ -241,7 +241,7 @@
         align-self: center;
     }
 }
-@media (min-width : 670px) {
+@media (min-width : 660px) {
     .flex-item {
         width: calc(100% / 5);
         box-sizing: border-box;
