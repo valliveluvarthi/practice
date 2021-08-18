@@ -1,3 +1,6 @@
+.input-group input[type=search]:focus{
+    box-shadow: none;
+}
 @media (max-width: 455px) {
     .container-fluid{
         padding: 0;

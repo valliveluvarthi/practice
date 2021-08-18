@@ -1,0 +1,411 @@
+@media (max-width : 768px) {
+    .availablerooms-wrapper{
+        position: absolute;
+        top: 80rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .availablerooms-header{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .col-xs-12{
+        padding-left: 0;
+    }
+    .sort-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .glyphicon-sort-by-attributes-alt{
+        font-size: 1.3rem;
+        color: #AEAFB7;
+    }
+    .glyphicon-menu-down{
+        font-size: 0.8rem;
+        color: #5486D2;
+    }
+    .relevance{
+        font-size: 1.2rem;
+        color: #5486D2;
+        font-weight: bold;
+    }
+    .available-text,.sort-text{
+        color: #A0A1A7;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .buttonrow{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+    .wrap{ 
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+      }
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 10rem;
+    }
+    .buttonrow .firstbtn{
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
+}
+@media (max-width : 340px) {
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 12rem;
+    }
+}
+@media (min-width : 340px) {
+    .flex-item {
+        width: calc(100% / 3);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 530px) {
+    .flex-item {
+        width: calc(100% / 4);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 670px) {
+    .flex-item {
+        width: calc(100% / 5);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 760px) {
+    .flex-item {
+        width: calc(100% / 6);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 768px) {
+    .availablerooms-container{
+        width: auto;
+    }
+    .availablerooms-wrapper{
+        position: absolute;
+        top: 12.5rem;
+        left: 42rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .availablerooms-header{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .col-sm-6{
+        padding-left: 0;
+        width: 100%;
+    }
+    .sort-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .glyphicon-sort-by-attributes-alt{
+        font-size: 1.3rem;
+        color: #AEAFB7;
+    }
+    .glyphicon-menu-down{
+        font-size: 0.8rem;
+        color: #5486D2;
+    }
+    .relevance{
+        font-size: 1.2rem;
+        color: #5486D2;
+        font-weight: bold;
+    }
+    .available-text,.sort-text{
+        color: #A0A1A7;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .buttonrow{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+    .wrap{ 
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+      }
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 10rem;
+    }
+    .buttonrow .firstbtn{
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
+}
+@media (min-width : 768px) and (max-width: 783px) {
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 12rem;
+    }
+}
+@media (min-width: 783px) {
+    .flex-item{
+        width: calc(100% / 3);
+        box-sizing: border-box;
+    }
+}
+@media (min-width : 864px) {
+    .flex-item{
+        width: calc(100% / 3);
+        box-sizing: border-box;
+    }
+}
+@media (min-width : 900px) {
+    .flex-item{
+        width: calc(100% / 4);
+        box-sizing: border-box;
+    }
+}
+@media (min-width : 992px) {
+    .availablerooms-container{
+        width: auto;
+    }
+    .availablerooms-wrapper{
+        position: absolute;
+        top: 12.5rem;
+        left: 38rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .availablerooms-header{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .col-md-6{
+        padding-left: 0;
+        width: 100%;
+    }
+    .sort-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .glyphicon-sort-by-attributes-alt{
+        font-size: 1.3rem;
+        color: #AEAFB7;
+    }
+    .glyphicon-menu-down{
+        font-size: 0.8rem;
+        color: #5486D2;
+    }
+    .relevance{
+        font-size: 1.2rem;
+        color: #5486D2;
+        font-weight: bold;
+    }
+    .available-text,.sort-text{
+        color: #A0A1A7;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .buttonrow{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+    .wrap{ 
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: calc(100% / 5);
+        box-sizing: border-box;
+      }
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 10rem;
+    }
+    .buttonrow .firstbtn{
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
+}
+@media (min-width : 1024px) {
+    .availablerooms-container{
+        width: auto;
+    }
+    .flex-item {
+        width: calc(100% / 5);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 1100px) {
+    .flex-item {
+        width: calc(100% / 6);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 1166px) {
+    .availablerooms-container{
+        width: auto;
+    }
+    .flex-item {
+        width: calc(100% / 6);
+        box-sizing: border-box;
+      }
+}
+@media (min-width : 1200px) {
+    .availablerooms-container{
+        width: auto;
+    }
+    .availablerooms-wrapper{
+        position: absolute;
+        top: 12.5rem;
+        left: 38rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .availablerooms-header{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .col-lg-6{
+        padding-left: 0;
+        width: 100%;
+    }
+    .sort-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .glyphicon-sort-by-attributes-alt{
+        font-size: 1.3rem;
+        color: #AEAFB7;
+    }
+    .glyphicon-menu-down{
+        font-size: 0.8rem;
+        color: #5486D2;
+    }
+    .relevance{
+        font-size: 1.2rem;
+        color: #5486D2;
+        font-weight: bold;
+    }
+    .available-text,.sort-text{
+        color: #A0A1A7;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .buttonrow{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+    .wrap{ 
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: calc(100% / 7);
+        box-sizing: border-box;
+      }
+    .buttonrow .btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 10rem;
+    }
+    .buttonrow .firstbtn{
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
+}
