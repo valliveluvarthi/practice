@@ -1,3 +1,22 @@
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 @media (max-width : 768px) {
     .availablerooms-container{
         overflow-x: scroll;
@@ -84,9 +103,6 @@
         outline: none;
     }
     /* newly added css classes */
-    .list-rooms-row{
-        margin-top: 1rem;
-    }
     .room-list-div{
         display: flex;
         margin-top: 2rem;
@@ -150,6 +166,14 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+    }
+    .scroll-div{
+        height: 60rem;
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1%;
+        margin-top: 2rem;
     }
 }
 @media (max-width : 460px) {
@@ -334,9 +358,6 @@
         background-color: #F0F5FF;
         outline: none;
     }
-    .list-rooms-row{
-        margin-top: 1rem;
-    }
     .room-list-div{
         display: flex;
         margin-top: 2rem;
@@ -401,6 +422,14 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+    }
+    .scroll-div{
+        height: 60rem;
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1%;
+        margin-top: 2rem;
     }
 }
 @media (min-width : 768px) and (max-width: 783px) {
@@ -511,9 +540,6 @@
         background-color: #F0F5FF;
         outline: none;
     }
-    .list-rooms-row{
-        margin-top: 1rem;
-    }
     .room-list-div{
         display: flex;
         margin-top: 2rem;
@@ -578,6 +604,14 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+    }
+    .scroll-div{
+        height: 60rem;
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1%;
+        margin-top: 2rem;
     }
 }
 @media (min-width : 1024px) {
@@ -687,9 +721,6 @@
         background-color: #F0F5FF;
         outline: none;
     }
-    .list-rooms-row{
-        margin-top: 1rem;
-    }
     .room-list-div{
         display: flex;
         margin-top: 2rem;
@@ -754,5 +785,13 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+    }
+    .scroll-div{
+        height: 60rem;
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1%;
+        margin-top: 2rem;
     }
 }
