@@ -440,6 +440,15 @@
         width: 12rem;
     }
 }
+@media (min-width : 768px) {
+    .image1{
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: auto;
+        height: auto;
+    }       
+}
 @media (min-width: 783px) {
     .flex-item{
         width: calc(100% / 3);
