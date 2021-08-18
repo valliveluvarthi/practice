@@ -1,4 +1,7 @@
 @media (max-width : 768px) {
+    .availablerooms-container{
+        overflow-x: scroll;
+    }
     .availablerooms-wrapper{
         position: absolute;
         top: 80rem;
@@ -75,6 +78,74 @@
         color: #5486D2;
         background-color: #F0F5FF;
         outline: none;
+    }
+    /* newly added css classes */
+    .list-rooms-row{
+        margin-top: 1rem;
+    }
+    .room-list-div{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .parent-image-div{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 10rem;
+        height: 8rem;
+    }
+    .image2 {
+        position: absolute;
+        top: -1rem;
+        left: 0rem;
+        width: 7rem;
+        height: 6rem;
+    }
+    .list-rooms-row .room-details{
+        padding: 0;
+        width: auto;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .room-details-text-div .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details-text-div .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details-text-div .eminities{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .list-rooms-row .room-indetail{
+        padding: 0;
+        color: #5486D2;
+        font-size: 1.3rem;
+        width: auto;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .reserve-col{
+        padding: 0;
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .reserve-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        border-radius: 2rem;
     }
 }
 @media (max-width : 340px) {
@@ -191,6 +262,73 @@
         background-color: #F0F5FF;
         outline: none;
     }
+    .list-rooms-row{
+        margin-top: 1rem;
+    }
+    .room-list-div{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .parent-image-div{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 10rem;
+        height: 8rem;
+    }
+    .image2 {
+        position: absolute;
+        top: -1rem;
+        left: 0rem;
+        width: 7rem;
+        height: 6rem;
+    }
+    .list-rooms-row .room-details{
+        padding: 0;
+        width: auto;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .room-details-text-div .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details-text-div .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details-text-div .eminities{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .list-rooms-row .room-indetail{
+        padding: 0;
+        color: #5486D2;
+        font-size: 1.3rem;
+        width: auto;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .reserve-col{
+        padding: 0;
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .reserve-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        border-radius: 2rem;
+    }
 }
 @media (min-width : 768px) and (max-width: 783px) {
     .buttonrow .btn{
@@ -300,6 +438,73 @@
         background-color: #F0F5FF;
         outline: none;
     }
+    .list-rooms-row{
+        margin-top: 1rem;
+    }
+    .room-list-div{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .parent-image-div{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 10rem;
+        height: 8rem;
+    }
+    .image2 {
+        position: absolute;
+        top: -1rem;
+        left: 0rem;
+        width: 7rem;
+        height: 6rem;
+    }
+    .list-rooms-row .room-details{
+        padding: 0;
+        width: auto;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .room-details-text-div .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details-text-div .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details-text-div .eminities{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .list-rooms-row .room-indetail{
+        padding: 0;
+        color: #5486D2;
+        font-size: 1.3rem;
+        width: auto;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .reserve-col{
+        padding: 0;
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .reserve-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        border-radius: 2rem;
+    }
 }
 @media (min-width : 1024px) {
     .availablerooms-container{
@@ -407,5 +612,72 @@
         color: #5486D2;
         background-color: #F0F5FF;
         outline: none;
+    }
+    .list-rooms-row{
+        margin-top: 1rem;
+    }
+    .room-list-div{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .parent-image-div{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .image1 {
+        position: relative;
+        top: 0;
+        left: 1rem;
+        width: 10rem;
+        height: 8rem;
+    }
+    .image2 {
+        position: absolute;
+        top: -1rem;
+        left: 0rem;
+        width: 7rem;
+        height: 6rem;
+    }
+    .list-rooms-row .room-details{
+        padding: 0;
+        width: auto;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .room-details-text-div .money{
+        color: #9c9fa4;
+        font-weight: 700;
+    }
+    .room-details-text-div .bed-size{
+        color: #2F3548;
+        font-weight: bold;
+    }
+    .room-details-text-div .eminities{
+        color: #8D8E99;
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .list-rooms-row .room-indetail{
+        padding: 0;
+        color: #5486D2;
+        font-size: 1.3rem;
+        width: auto;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .reserve-col{
+        padding: 0;
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .reserve-col .btn-primary {
+        color: #fff;
+        background-color: #2779F4;
+        border-color: #2779F4;
+        border-radius: 2rem;
     }
 }
