@@ -11,5 +11,11 @@ export class AvailableroomsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  btnClick(eve, id) {
+    if (id !== 'deluxe') {
+      var btn = document.getElementById('deluxe');
+      if(btn !== null)
+      btn.classList.remove("active");
+    }
+  }
 }

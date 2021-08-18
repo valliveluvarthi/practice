@@ -81,6 +81,12 @@
         padding: 0.3rem;
         border-radius: 0.5rem;
     }
+    .deluxe.active{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
         color: #5486D2;
@@ -337,6 +343,12 @@
         padding: 0.3rem;
         border-radius: 0.5rem;
     }
+    .deluxe.active{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
         color: #5486D2;
@@ -519,6 +531,12 @@
         padding: 0.3rem;
         border-radius: 0.5rem;
     }
+    .deluxe.active{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
+    }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
         color: #5486D2;
@@ -699,6 +717,12 @@
         margin-top: 1rem;
         padding: 0.3rem;
         border-radius: 0.5rem;
+    }
+    .deluxe.active{
+        border: 1px solid #5486D2;
+        color: #5486D2;
+        background-color: #F0F5FF;
+        outline: none;
     }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
