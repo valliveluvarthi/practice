@@ -780,7 +780,7 @@
         width: 100%;
     }
     .input-group-addon {
-        padding: 12px 12px;
+        padding: 1rem;
         font-size: large;
         font-weight: 200;
         line-height: 1;
@@ -795,8 +795,8 @@
     .form-control {
         display: block;
         width: 100%;
-        padding: 2%;
-        font-size: 2.5rem;
+        padding: 2rem;
+        font-size: large;
         line-height: 1.42857143;
         color: #A2A4AA;
         background-color: #F4F6FA;
@@ -807,24 +807,38 @@
     }
     .fa{
         color: #AAACB0;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .material-icons{
         color: #AAACB0;
-        font-size: 4rem;
+        font-size: 2rem;
     }
-    .badge {
+    .badge-notification i {
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
         position: relative;
-        top: -3.9rem;
-        left: 0.3rem;
-        border-radius: 50%;
-        color: transparent;
-        background: transparent;
-        font-size: 3rem;
     }
+    .badge-notification .badge:after {
+        content: ".";
+        position: absolute;
+        background: #32B8E5;
+        height: 1rem;
+        top: 0;
+        right: 1.5rem;
+        left: 2.5rem;
+        width: 1rem;
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1rem;
+        border-radius: 50%;
+        color: #32B8E5;
+      }
     .col-lg-1 {
         width: 3.333333%;
-        margin-top: 0.5%;
+        margin: 0.5%;
+        margin-top: 0.8%;
         text-align: center;
     }
     .notification-icon{
@@ -839,18 +853,18 @@
     }
     .sub-row-circle-div{
         padding: 0;
-        padding-left: 3rem;
-        width: 20.6%;
+        margin-left: 10%;
+        width: 18.6%;
     }
     .circle{
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         font-size: 1rem;
         color: #fff;
         text-align: center;
-        line-height: 5rem;
-        min-width: 5rem;
+        line-height: 4rem;
+        min-width: 4rem;
         background: #B3CFC3;
         cursor: pointer;
     }
@@ -875,6 +889,6 @@
         width: 2rem;
     }
     .user-dropdown{
-        padding-left: 2rem;
+        padding-left: 2%;
     }
 }
