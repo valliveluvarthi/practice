@@ -3,7 +3,7 @@
         padding: 0;
     }
     .srearch-room-wrapper{
-        position: absolute;
+        position: relative;
         top: 12rem;
         padding: 1rem;
         border: 1px solid #e1e4e2;
@@ -136,7 +136,7 @@
     }
     .last-reserve-panel{
         top: 68rem;
-        position: absolute;
+        position: relative;
     }
     .last-reserve-panel .col-xs-12{
         width: 100%;
@@ -191,7 +191,7 @@
 }
 @media (min-width : 768px) and (max-width: 992px){
     .srearch-room-wrapper{
-        position: absolute;
+        position: relative;
         top: 10rem;
         padding: 1rem;
         border: 1px solid #e1e4e2;
@@ -343,7 +343,7 @@
     }
     .last-reserve-panel{
         top: 66rem;
-        position: absolute;
+        position: relative;
     }
     .last-reserve-panel .container{
         width: 34rem;
@@ -398,7 +398,7 @@
 }
 @media (min-width : 992px) and (max-width: 1200px){
     .srearch-room-wrapper{
-        position: absolute;
+        position: relative;
         top: 10rem;
         padding: 1rem;
         border: 1px solid #e1e4e2;
@@ -551,7 +551,7 @@
     }
     .last-reserve-panel{
         top: 66rem;
-        position: absolute;
+        position: relative;
     }
     .last-reserve-panel .container{
         width: 30rem;
@@ -607,7 +607,7 @@
 }
 @media (min-width : 1200px){
     .srearch-room-wrapper{
-        position: absolute;
+        position: relative;
         top: 10rem;
         padding: 1rem;
         border: 1px solid #e1e4e2;
@@ -760,7 +760,7 @@
     }
     .last-reserve-panel{
         top: 66rem;
-        position: absolute;
+        position: relative;
     }
     .last-reserve-panel .container{
         width: 30rem;
