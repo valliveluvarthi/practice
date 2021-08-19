@@ -30,7 +30,7 @@
     .sort-row{
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 1rem;
         align-content: center;
         justify-content: space-between;
     }
@@ -43,13 +43,13 @@
         color: #5486D2;
     }
     .relevance{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #5486D2;
         font-weight: bold;
     }
     .available-text,.sort-text{
         color: #A0A1A7;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold;
         width: 15rem;
     }
@@ -64,7 +64,7 @@
         display: -moz-flex;
         display: -webkit-flex;
         display: flex;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         font-size: 1rem;
     }
     .wrap{ 
