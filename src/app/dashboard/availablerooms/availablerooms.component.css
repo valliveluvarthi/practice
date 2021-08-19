@@ -10,6 +10,7 @@
 @media (max-width : 768px) {
     .availablerooms-container{
         overflow-x: scroll;
+        padding: auto;
     }
     .container-fluid{
         padding: 0;
@@ -193,7 +194,7 @@
     .buttonrow .btn{
         margin-left: 1rem;
         margin-right: 1rem;
-        width: 12rem;
+        width: 10rem;
     }
 }
 @media (min-width : 460px) {
