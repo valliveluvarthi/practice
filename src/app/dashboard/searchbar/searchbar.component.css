@@ -6,7 +6,7 @@
         padding: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -118,7 +118,7 @@
         padding: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -226,7 +226,7 @@
         padding-left: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -342,7 +342,7 @@
         padding: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -475,7 +475,7 @@
         padding: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -620,7 +620,7 @@
         padding: 0;
     }
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -768,12 +768,9 @@
     }
 }
 @media (min-width: 1198px) {
-    .container-fluid{
-        padding-left: 0;
-        padding-right: 3rem;
-    }
+    
     .searchbar-wrapper{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: auto;
         margin-top: 3%;
@@ -783,8 +780,8 @@
         width: 100%;
     }
     .input-group-addon {
-        padding: 6px 12px;
-        font-size: 1rem;
+        padding: 12px 12px;
+        font-size: large;
         font-weight: 200;
         line-height: 1;
         color: #555;
@@ -798,8 +795,8 @@
     .form-control {
         display: block;
         width: 100%;
-        padding: 6px 12px;
-        font-size: 1.5rem;
+        padding: 2%;
+        font-size: 2.5rem;
         line-height: 1.42857143;
         color: #A2A4AA;
         background-color: #F4F6FA;
@@ -810,45 +807,50 @@
     }
     .fa{
         color: #AAACB0;
+        font-size: 3rem;
     }
     .material-icons{
         color: #AAACB0;
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .badge {
         position: relative;
         top: -3.9rem;
         left: 0.3rem;
         border-radius: 50%;
-        color: #32B8E5;
+        color: transparent;
         background: transparent;
         font-size: 3rem;
     }
     .col-lg-1 {
-        width: 4.333333%;
-        margin-top: 1%;
+        width: 3.333333%;
+        margin-top: 0.5%;
+        text-align: center;
     }
     .notification-icon{
-        margin-top: 1%;
+        text-align: center;
+        margin: 0.5%;
+        padding: 0;
     }
     .sub-row-text-div{
-        width: 63.333333%;
+        width: auto;
         padding: 0;
+        margin-top: 1%;
     }
     .sub-row-circle-div{
         padding: 0;
-        padding-left: 1rem;
+        padding-left: 3rem;
         width: 20.6%;
     }
     .circle{
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         font-size: 1rem;
         color: #fff;
         text-align: center;
-        line-height: 4rem;
-        min-width: 4rem;
+        line-height: 5rem;
+        min-width: 5rem;
         background: #B3CFC3;
         cursor: pointer;
     }
