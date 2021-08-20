@@ -2,6 +2,9 @@
     .container-fluid{
         padding: 0;
     }
+    .searchroom-container{
+        padding-left: 0;
+    }
     .srearch-room-wrapper{
         position: relative;
         top: 2rem;
@@ -105,12 +108,13 @@
     }
     .room-type-col{
         margin-top: 2rem;
-        background: #E8EAEE;
         border-radius: 0.5rem;
+        padding-left: 1.5rem;
     }
     .room-type-col .col-xs-12{
         padding: 0.8rem;
         padding-left: 1.3rem;
+        background: #E8EAEE;
     }
     .room-type{
         color: #A9AAB3;
@@ -196,6 +200,7 @@
         padding: 1rem;
         border: 1px solid #e1e4e2;
         border-radius: 0.5rem;
+        margin-top: 5%;
     }
     .searchroom-container{
         width: auto;
@@ -405,6 +410,7 @@
         padding: 1rem;
         border: 1px solid #e1e4e2;
         border-radius: 0.5rem;
+        margin-top: 5%;
     }
     .searchroom-container{
         width: auto;

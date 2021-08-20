@@ -9,7 +9,7 @@
         position: relative;
         width: 100%;
         margin: auto;
-        margin-top: 3%;
+        margin-top: 5%;
         background: #FFFFFF;
         transition: all 0.5s ease;
     }
@@ -31,13 +31,13 @@
         border: 1px solid transparent;
     }
     .col-xs-12{
-        padding-left: 0;
+        padding: 0;
     }
     .form-control {
         display: block;
         width: 100%;
         padding: 6px 12px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.42857143;
         color: #A2A4AA;
         background-color: #F4F6FA;
@@ -66,11 +66,13 @@
         margin-top: 3%;
     }
     .col-xs-1{
-        width : 12.333333%;
-        padding-left: 0;
+        /* width : 12.333333%;
+        padding-left: 0; */
+        width: 11.333333%;
+        padding: 0;
     }
     .col-xs-9{
-        padding-left: 3%;
+        padding: 0;
     }
     .sub-row-circle-div{
         padding: 0;
