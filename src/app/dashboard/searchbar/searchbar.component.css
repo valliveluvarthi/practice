@@ -815,6 +815,9 @@
         color: #AAACB0;
         font-size: 2rem;
     }
+    .badge-notification{
+        margin-top: 1.5rem;
+    }
     .badge-notification i {
         width: auto;
         display: inline-block;
@@ -839,8 +842,6 @@
       }
     .col-lg-1 {
         width: 3.333333%;
-        margin: 0.5%;
-        margin-top: 0.8%;
         text-align: center;
     }
     .notification-icon{
