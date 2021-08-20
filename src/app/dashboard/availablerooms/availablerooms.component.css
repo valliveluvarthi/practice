@@ -94,12 +94,8 @@
         border-radius: 0.5rem;
         color: gray;
         border: 1px solid #e4e4e4;
-    }
-    .deluxe.active{
-        border: 1px solid #5486D2;
-        color: #5486D2;
-        background-color: #F0F5FF;
-        outline: none;
+        box-shadow: none;
+        background: #ffffff;
     }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
@@ -363,12 +359,8 @@
         border-radius: 0.5rem;
         color: gray;
         border: 1px solid #e4e4e4;
-    }
-    .deluxe.active{
-        border: 1px solid #5486D2;
-        color: #5486D2;
-        background-color: #F0F5FF;
-        outline: none;
+        box-shadow: none;
+        background: #ffffff;
     }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
@@ -557,12 +549,8 @@
         border-radius: 0.5rem;
         color: gray;
         border: 1px solid #e4e4e4;
-    }
-    .deluxe.active{
-        border: 1px solid #5486D2;
-        color: #5486D2;
-        background-color: #F0F5FF;
-        outline: none;
+        box-shadow: none;
+        background: #ffffff;
     }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;
@@ -731,12 +719,8 @@
         border-radius: 0.5rem;
         color: gray;
         border: 1px solid #e4e4e4;
-    }
-    .deluxe.active{
-        border: 1px solid #5486D2;
-        color: #5486D2;
-        background-color: #F0F5FF;
-        outline: none;
+        box-shadow: none;
+        background: #ffffff;
     }
     .buttonrow .firstbtn:focus,.firstbtn:active,.firstbtn:hover{
         border: 1px solid #5486D2;

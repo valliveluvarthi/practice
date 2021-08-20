@@ -1,3 +1,23 @@
+.search-button-col button:focus {
+    outline: none;
+    border-color: #2779F4;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.date-text input:focus {
+    outline: none;
+    border: none;
+}
+.room-type-name select{
+    width: 100%;
+    padding: 2%;
+    background: #E8EAEE;
+    border: none;
+}
+.room-type-name select:focus{
+    outline: none;
+    border: none;
+}
 @media (max-width : 768px) {
     .container-fluid{
         padding: 0;
@@ -57,6 +77,13 @@
         color: #484C58;
         font-weight: bold;
     }
+    .date-text input{
+        background: #E8EAEE;
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        cursor: pointer;
+    }
     .no-of-rooms-row{
         margin-left: 0.1rem;
         margin-top: 2rem;
@@ -97,11 +124,13 @@
         color: #D9E7FD;
         width: 3.5rem;
         font-size: 2rem;
+        cursor: pointer;
     }
     .rooms-count-col .glyphicon-plus-sign{
         color: #D9E7FD;
         width: 3rem;
         font-size: 2rem;
+        cursor: pointer;
     }
     .room-text{
         width: 2.5rem;
@@ -120,6 +149,7 @@
         color: #A9AAB3;
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
+        padding-left: 1rem;
     }
     .room-type-name{
         color: #454B5F;
@@ -137,6 +167,7 @@
         width: 100%;
         border-radius: 2rem;
         padding: 1rem;
+        cursor: pointer;
     }
     .last-reserve-panel{
         top: 6rem;
@@ -156,6 +187,7 @@
     .last-reserve-panel .last-reservation-text,.menu-icon{
         font-size: large;
         font-weight: bold;
+        cursor: pointer;
     }
     .room-details{
         margin-top: 2rem;
@@ -191,6 +223,7 @@
     .room-details .chevron-right{
         align-self: center;
         padding-left: 2rem;
+        cursor: pointer;
     }
 }
 @media (min-width : 768px) and (max-width: 992px){
@@ -224,11 +257,12 @@
         margin-top: 0.5rem;
     }
     .date-row{
-        margin-left: 0.1rem;
+        margin: 1%;
         margin-top: 2.5rem;
     }
     .date-row .col-sm-6{
         width: 100%;
+        padding-left: 0.5rem;
     }
     .check-in-out-row{
         display: flex;
@@ -244,11 +278,11 @@
     }
     .check-in-col{
         margin-right: 0.5rem;
-        width: 14rem;
+        width: 50%;
     }
     .check-out-col{
         margin-left: 0.5rem;
-        width: 14rem;
+        width: 50%;
     }
     .check-in-text{
         color: #B3B4BD;
@@ -256,6 +290,13 @@
     .date-text{
         color: #484C58;
         font-weight: bold;
+    }
+    .date-text input{
+        background: #E8EAEE;
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        cursor: pointer;
     }
     .no-of-rooms-row{
         margin-left: 0.1rem;
@@ -302,11 +343,13 @@
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .rooms-count-col .glyphicon-plus-sign{
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .room-text{
         width: 2.5rem;
@@ -345,6 +388,7 @@
         width: 100%;
         border-radius: 2rem;
         padding: 1rem;
+        cursor: pointer;
     }
     .last-reserve-panel{
         top: auto;
@@ -368,6 +412,7 @@
     .last-reserve-panel .last-reservation-text,.menu-icon{
         font-size: 2rem;
         font-weight: bold;
+        cursor: pointer;
     }
     .room-details{
         margin-top: 2rem;
@@ -401,6 +446,7 @@
     }
     .room-details .chevron-right{
         align-self: center;
+        cursor: pointer;
     }
 }
 @media (min-width : 992px) and (max-width: 1200px){
@@ -469,6 +515,13 @@
         color: #484C58;
         font-weight: bold;
     }
+    .date-text input{
+        background: #E8EAEE;
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        cursor: pointer;
+    }
     .no-of-rooms-row{
         margin-left: 0.1rem;
         margin-top: 2rem;
@@ -514,11 +567,13 @@
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .rooms-count-col .glyphicon-plus-sign{
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .room-text{
         width: 2.5rem;
@@ -557,6 +612,7 @@
         width: 100%;
         border-radius: 2rem;
         padding: 1rem;
+        cursor: pointer;
     }
     .last-reserve-panel{
         top: auto;
@@ -579,6 +635,7 @@
     .last-reserve-panel .last-reservation-text,.menu-icon{
         font-size: large;
         font-weight: bold;
+        cursor: pointer;
     }
     .room-details{
         margin-top: 2rem;
@@ -614,6 +671,7 @@
     .room-details .chevron-right{
         align-self: center;
         padding-left: 6rem;
+        cursor: pointer;
     }
 }
 @media (min-width : 1200px){
@@ -648,7 +706,7 @@
         font-size: 1.2rem;
     }
     .date-row{
-        margin-left: 0.1rem;
+        margin: 1%;
         margin-top: 2.5rem;
     }
     .date-row .col-lg-6{
@@ -681,6 +739,13 @@
     .date-text{
         color: #484C58;
         font-weight: bold;
+    }
+    .date-text input{
+        background: #E8EAEE;
+        width: 100%;
+        font-size: 1.3rem;
+        border: none;
+        cursor: pointer;
     }
     .no-of-rooms-row{
         margin-left: 0.1rem;
@@ -727,11 +792,13 @@
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .rooms-count-col .glyphicon-plus-sign{
         color: #D9E7FD;
         width: 3rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
     .room-text{
         width: 2.5rem;
@@ -770,6 +837,7 @@
         width: 100%;
         border-radius: 2rem;
         padding: 1rem;
+        cursor: pointer;
     }
     .last-reserve-panel{
         top: auto;
@@ -792,6 +860,7 @@
     .last-reserve-panel .last-reservation-text,.menu-icon{
         font-size: large;
         font-weight: bold;
+        cursor: pointer;
     }
     .room-details{
         margin-top: 2rem;
@@ -827,5 +896,6 @@
     .room-details .chevron-right{
         align-self: center;
         padding-left: 6rem;
+        cursor: pointer;
     }
 }

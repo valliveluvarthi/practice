@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DashboardService } from '../dashboard.service';
 
 @Component({
   selector: 'app-availablerooms',
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvailableroomsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dashboardService : DashboardService) { }
 
   ngOnInit(): void {
+    
   }
   btnClick(eve, id) {
     if (id !== 'deluxe') {
       var btn = document.getElementById('deluxe');
-      if(btn !== null)
+      if(btn !== null){
       btn.classList.remove("active");
+      }
     }
   }
 }

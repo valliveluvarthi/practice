@@ -40,11 +40,11 @@
                     <div class="row check-in-out-row">
                         <div class="col-xs-6 check-in-col">
                             <div class="check-in-text">Check In</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                         <div class="col-xs-6 check-out-col">
                             <div class="check-in-text">Check Out</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input  placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                     </div>
                 </div>
@@ -52,11 +52,11 @@
                     <div class="row check-in-out-row">
                         <div class="col-sm-3 check-in-col">
                             <div class="check-in-text">Check In</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                         <div class="col-sm-3 check-out-col">
                             <div class="check-in-text">Check Out</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                     </div>
                 </div>
@@ -64,11 +64,11 @@
                     <div class="row check-in-out-row">
                         <div class="col-md-3 check-in-col">
                             <div class="check-in-text">Check In</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                         <div class="col-md-3 check-out-col">
                             <div class="check-in-text">Check Out</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                     </div>
                 </div>
@@ -76,11 +76,11 @@
                     <div class="row check-in-out-row">
                         <div class="col-lg-3 check-in-col">
                             <div class="check-in-text">Check In</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                         <div class="col-lg-3 check-out-col">
                             <div class="check-in-text">Check Out</div>
-                            <div class="date-text">Tue, Jul 27</div>
+                            <div class="date-text"><input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                         </div>
                     </div>
                 </div>
@@ -94,9 +94,9 @@
                             <div class="desc-text">Older than 12 years</div>
                         </div>
                         <div class="col-xs-6 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count1')"></span></div>
+                            <div class="people-text room-text count1">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count1')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -107,9 +107,9 @@
                             <div class="desc-text">Older than 12 years</div>
                         </div>
                         <div class="col-sm-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count2')"></span></div>
+                            <div class="people-text room-text count2">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count2')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -120,9 +120,9 @@
                             <div class="desc-text">Older than 12 years</div>
                         </div>
                         <div class="col-md-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count3')"></span></div>
+                            <div class="people-text room-text count3">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count3')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -133,9 +133,9 @@
                             <div class="desc-text">Older than 12 years</div>
                         </div>
                         <div class="col-lg-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count4')"></span></div>
+                            <div class="people-text room-text count4">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count4')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -148,9 +148,9 @@
                             <div class="desc-text">0 - 12 years</div>
                         </div>
                         <div class="col-xs-6 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count5')"></span></div>
+                            <div class="people-text room-text count5">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count5')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -161,9 +161,9 @@
                             <div class="desc-text">0 - 12 years</div>
                         </div>
                         <div class="col-sm-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count6')"></span></div>
+                            <div class="people-text room-text count6">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count6')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -174,9 +174,9 @@
                             <div class="desc-text">0 - 12 years</div>
                         </div>
                         <div class="col-md-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count7')"></span></div>
+                            <div class="people-text room-text count7">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count7')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -187,9 +187,9 @@
                             <div class="desc-text">0 - 12 years</div>
                         </div>
                         <div class="col-lg-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count8')"></span></div>
+                            <div class="people-text room-text count8">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count8')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -201,9 +201,9 @@
                             <div class="people-text">Room</div>
                         </div>
                         <div class="col-xs-6 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count9')"></span></div>
+                            <div class="people-text room-text count9">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count9')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -213,9 +213,9 @@
                             <div class="people-text">Room</div>
                         </div>
                         <div class="col-sm-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count10')"></span></div>
+                            <div class="people-text room-text count10">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count10')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -225,9 +225,9 @@
                             <div class="people-text">Room</div>
                         </div>
                         <div class="col-md-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count11')"></span></div>
+                            <div class="people-text room-text count11">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count11')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -237,9 +237,9 @@
                             <div class="people-text">Room</div>
                         </div>
                         <div class="col-lg-3 rooms-count-col">
-                            <div><span class="glyphicon glyphicon-minus-sign"></span></div>
-                            <div class="people-text room-text">2</div>
-                            <div><span class="glyphicon glyphicon-plus-sign"></span></div>
+                            <div><span class="glyphicon glyphicon-minus-sign" (click)="onSign('minus','count12')"></span></div>
+                            <div class="people-text room-text count12">2</div>
+                            <div><span class="glyphicon glyphicon-plus-sign" (click)="onSign('plus','count12')"></span></div>
                         </div>
                     </div>
                 </div>
@@ -248,33 +248,69 @@
             <div class="row room-type-col">
                 <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
                     <div class="room-type">Room Type</div>
-                    <div class="room-type-name">Deluxe</div>
+                    <div class="room-type-name">
+                        <select class="mdb-select md-form colorful-select dropdown-dark rooms">
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Standart">Standart</option>
+                            <option value="Presidential">Presidential</option>
+                            <option value="Suite">Suite</option>
+                            <option value="Junior Suite">Junior Suite</option>
+                            <option value="Twin Room">Twin Room</option>
+                          </select>
+                    </div>
                 </div>
                 <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
                     <div class="room-type">Room Type</div>
-                    <div class="room-type-name">Deluxe</div>
+                    <div class="room-type-name">
+                        <select class="mdb-select md-form colorful-select dropdown-dark rooms">
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Standart">Standart</option>
+                            <option value="Presidential">Presidential</option>
+                            <option value="Suite">Suite</option>
+                            <option value="Junior Suite">Junior Suite</option>
+                            <option value="Twin Room">Twin Room</option>
+                          </select>
+                    </div>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-6">
                     <div class="room-type">Room Type</div>
-                    <div class="room-type-name">Deluxe</div>
+                    <div class="room-type-name">
+                        <select class="mdb-select md-form colorful-select dropdown-dark rooms">
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Standart">Standart</option>
+                            <option value="Presidential">Presidential</option>
+                            <option value="Suite">Suite</option>
+                            <option value="Junior Suite">Junior Suite</option>
+                            <option value="Twin Room">Twin Room</option>
+                          </select>
+                    </div>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-6">
                     <div class="room-type">Room Type</div>
-                    <div class="room-type-name">Deluxe</div>
+                    <div class="room-type-name">
+                        <select class="mdb-select md-form colorful-select dropdown-dark rooms">
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Standart">Standart</option>
+                            <option value="Presidential">Presidential</option>
+                            <option value="Suite">Suite</option>
+                            <option value="Junior Suite">Junior Suite</option>
+                            <option value="Twin Room">Twin Room</option>
+                          </select>
+                    </div>
                 </div>
             </div>
             <div class="row search-button-col">
                 <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <button type="button" (click)="search()" class="btn btn-primary">Search</button>
                 </div>
                 <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <button type="button" (click)="search()" class="btn btn-primary">Search</button>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-6">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <button type="button" (click)="search()" class="btn btn-primary">Search</button>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-6">
-                    <button type="button" class="btn btn-primary">Search</button>
+                    <button type="button" (click)="search()" class="btn btn-primary">Search</button>
                 </div>
             </div>
         </div>

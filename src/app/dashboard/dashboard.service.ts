@@ -15,9 +15,9 @@ export class DashboardService {
     session_id: string;
     constructor(private http: HttpClient, private cookieService: CookieService) { }
 
-    getContacts() {
+    getAllRoomDetails() {
         let url: string;
-        url = "http://localhost:3000/contacts";
+        url = "http://localhost:3000/allrooms";
         this.session_id = this.cookieService.get("session_id" + "_localhost");
         this.headers = this.headers.set('session_id', this.session_id);
         return this.http.get(url, { headers: this.headers })
@@ -25,24 +25,65 @@ export class DashboardService {
                 return resp;
             }));
     }
-    postContacts(model) {
+    getDeluxeDetails() {
         let url: string;
-        url = "http://localhost:3000/contacts";
+        url = "http://localhost:3000/deluxe";
         this.session_id = this.cookieService.get("session_id" + "_localhost");
         this.headers = this.headers.set('session_id', this.session_id);
-        return this.http.post(url, model, { headers: this.headers })
+        return this.http.get(url, { headers: this.headers })
             .pipe(map((resp: any) => {
                 return resp;
             }));
     }
-    updateContacts(model,id) {
+    getStandartDetails() {
         let url: string;
-        url = "http://localhost:3000/contacts/" + id;
+        url = "http://localhost:3000/standart";
         this.session_id = this.cookieService.get("session_id" + "_localhost");
         this.headers = this.headers.set('session_id', this.session_id);
-        return this.http.put(url, model, { headers: this.headers })
+        return this.http.get(url, { headers: this.headers })
             .pipe(map((resp: any) => {
                 return resp;
             }));
     }
+    getPresidentialDetails() {
+        let url: string;
+        url = "http://localhost:3000/presidential";
+        this.session_id = this.cookieService.get("session_id" + "_localhost");
+        this.headers = this.headers.set('session_id', this.session_id);
+        return this.http.get(url, { headers: this.headers })
+            .pipe(map((resp: any) => {
+                return resp;
+            }));
+    }
+    getSuiteDetails() {
+        let url: string;
+        url = "http://localhost:3000/suite";
+        this.session_id = this.cookieService.get("session_id" + "_localhost");
+        this.headers = this.headers.set('session_id', this.session_id);
+        return this.http.get(url, { headers: this.headers })
+            .pipe(map((resp: any) => {
+                return resp;
+            }));
+    }
+    getJuniorSuiteDetails() {
+        let url: string;
+        url = "http://localhost:3000/juniorsuite";
+        this.session_id = this.cookieService.get("session_id" + "_localhost");
+        this.headers = this.headers.set('session_id', this.session_id);
+        return this.http.get(url, { headers: this.headers })
+            .pipe(map((resp: any) => {
+                return resp;
+            }));
+    }
+    getTwinRoomDetails() {
+        let url: string;
+        url = "http://localhost:3000/twinroom";
+        this.session_id = this.cookieService.get("session_id" + "_localhost");
+        this.headers = this.headers.set('session_id', this.session_id);
+        return this.http.get(url, { headers: this.headers })
+            .pipe(map((resp: any) => {
+                return resp;
+            }));
+    }
+
 }
