@@ -11,7 +11,9 @@ export class AvailableroomsComponent implements OnInit {
   constructor(public dashboardService : DashboardService) { }
 
   ngOnInit(): void {
-    
+    this.dashboardService.getRoomDetails("allrooms").subscribe((result: any) => {
+      console.log(result);
+    });
   }
   btnClick(eve, id) {
     if (id !== 'deluxe') {
@@ -19,6 +21,9 @@ export class AvailableroomsComponent implements OnInit {
       if(btn !== null){
       btn.classList.remove("active");
       }
+      this.dashboardService.getRoomDetails(id).subscribe((result: any) => {
+        console.log(result);
+      });
     }
   }
 }
