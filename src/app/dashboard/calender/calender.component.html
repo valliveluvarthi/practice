@@ -5,16 +5,16 @@
     <div class="container">
         <div class="row">
             <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-                <app-searchbar></app-searchbar>
+                <app-searchbar (filterByName)="filterBy($event)"></app-searchbar>
             </div>
             <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-12">
-                <app-searchbar></app-searchbar>
+                <app-searchbar (filterByName)="filterBy($event)"></app-searchbar>
             </div>
             <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-12">
-                <app-searchbar></app-searchbar>
+                <app-searchbar (filterByName)="filterBy($event)"></app-searchbar>
             </div>
             <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-12">
-                <app-searchbar></app-searchbar>
+                <app-searchbar (filterByName)="filterBy($event)"></app-searchbar>
             </div>
         </div>
         <div class="row">
@@ -23,28 +23,28 @@
                 <app-searchroom></app-searchroom>
             </div>
             <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
-                <app-availablerooms></app-availablerooms>
+                <app-availablerooms [message]="filterName"></app-availablerooms>
             </div>
             <!-- for sm screens -->
             <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
                 <app-searchroom></app-searchroom>
             </div>
             <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
-                <app-availablerooms></app-availablerooms>
+                <app-availablerooms [message]="filterName"></app-availablerooms>
             </div>
             <!-- for md screens -->
             <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-6">
                 <app-searchroom></app-searchroom>
             </div>
             <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-6">
-                <app-availablerooms></app-availablerooms>
+                <app-availablerooms [message]="filterName"></app-availablerooms>
             </div>
             <!-- for lg screens -->
             <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-4">
                 <app-searchroom></app-searchroom>
             </div>
             <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-8">
-                <app-availablerooms></app-availablerooms>
+                <app-availablerooms [message]="filterName"></app-availablerooms>
             </div>
         </div>
     </div>

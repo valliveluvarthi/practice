@@ -6,7 +6,7 @@
                 <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                        <input type="search" class="form-control" placeholder="Search room name, other facilities">
+                        <input (keyup)="filterBy('search-xs')" type="search" id="search-xs" class="form-control" placeholder="Search room name, other facilities">
                     </div>
                 </div>
                 <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-1 notification-icon">
@@ -42,7 +42,7 @@
                 <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                        <input type="search" class="form-control" placeholder="Search room name, other facilities">
+                        <input (keyup)="filterBy('search-sm')"  id="search-sm" type="search" class="form-control" placeholder="Search room name, other facilities">
                     </div>
                 </div>
                 <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-1 notification-icon">
@@ -78,7 +78,7 @@
                 <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                        <input type="search" class="form-control" placeholder="Search room name, other facilities">
+                        <input (keyup)="filterBy('search-md')"   id="search-md" type="search" class="form-control" placeholder="Search room name, other facilities">
                     </div>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-1 notification-icon">
@@ -114,7 +114,7 @@
                 <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                        <input type="search" class="form-control" placeholder="Search room name, other facilities">
+                        <input (keyup)="filterBy('search-lg')"   id="search-lg" type="search" class="form-control" placeholder="Search room name, other facilities">
                     </div>
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-1 notification-icon">
