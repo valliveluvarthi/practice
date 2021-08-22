@@ -1,3 +1,340 @@
 {
-  
+    "allrooms": [
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.dYZXQAMOuUHySXSl4UJEYgHaE7&pid=Api&P=0&w=245&h=164",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.pTgTJcchVZahl6SbPgEgVAHaEj&pid=Api&P=0&w=259&h=160",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.ofZR6yze6pPEBSHf13cixAHaE8&pid=Api&P=0&w=245&h=164",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.XxSSuJP5PiM_kd-06KYmPwHaEK&pid=Api&P=0&w=324&h=183",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.5jTrorvpxB8T6oAlDof43QHaDu&pid=Api&P=0&w=308&h=156",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.Gx66k0RK8qRc3BrMOYuingHaE8&pid=Api&P=0&w=238&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.vvaJ2RHK-kUAx9PsS00phwHaE8&pid=Api&P=0&w=246&h=165",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.dd5NDAuauO-rHPQXIA54IQHaFA&pid=Api&P=0&w=240&h=163",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.Lfo0O-q--TmlIjM5-Fx5ngHaE8&pid=Api&P=0&w=237&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.UecmWknyfqWzk18Gj8Z8xgHaE8&pid=Api&P=0&w=256&h=171",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.32MCEf7Y7QpOyqNKV4POiQHaEK&pid=Api&P=0&w=324&h=183",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.explicit.bing.net/th?id=OIP.COUGSdEKRUn-2ZAprV5WMQHaE7&pid=Api&P=0&w=281&h=188",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.6rKErP29jTTQ1jYD6TpsaQHaE8&pid=Api&P=0&w=237&h=159",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.l7-D_e5FFJpBYkSgTpd6qQHaE1&pid=Api&P=0&w=287&h=188",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.OWikxh8Qbwcu4kR7G4-6CQHaE7&pid=Api&P=0&w=238&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.uANMpK2Jnq778iPWjTG4NAHaE8&pid=Api&P=0&w=263&h=176",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.dwJAouk6UVQ-N3TWv8tMkgHaE8&pid=Api&P=0&w=242&h=162",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.qKtA1DO_FzXg8kUg_J48-gHaE7&pid=Api&P=0&w=250&h=167",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "deluxe": [
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.dYZXQAMOuUHySXSl4UJEYgHaE7&pid=Api&P=0&w=245&h=164",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.pTgTJcchVZahl6SbPgEgVAHaEj&pid=Api&P=0&w=259&h=160",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.ofZR6yze6pPEBSHf13cixAHaE8&pid=Api&P=0&w=245&h=164",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Deluxe",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "standart": [
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.XxSSuJP5PiM_kd-06KYmPwHaEK&pid=Api&P=0&w=324&h=183",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.5jTrorvpxB8T6oAlDof43QHaDu&pid=Api&P=0&w=308&h=156",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.Gx66k0RK8qRc3BrMOYuingHaE8&pid=Api&P=0&w=238&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Standart Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "presidential": [
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.vvaJ2RHK-kUAx9PsS00phwHaE8&pid=Api&P=0&w=246&h=165",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.dd5NDAuauO-rHPQXIA54IQHaFA&pid=Api&P=0&w=240&h=163",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.Lfo0O-q--TmlIjM5-Fx5ngHaE8&pid=Api&P=0&w=237&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Presidential Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "suite": [
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.UecmWknyfqWzk18Gj8Z8xgHaE8&pid=Api&P=0&w=256&h=171",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse1.mm.bing.net/th?id=OIP.32MCEf7Y7QpOyqNKV4POiQHaEK&pid=Api&P=0&w=324&h=183",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.explicit.bing.net/th?id=OIP.COUGSdEKRUn-2ZAprV5WMQHaE7&pid=Api&P=0&w=281&h=188",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "juniorsuite": [
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.6rKErP29jTTQ1jYD6TpsaQHaE8&pid=Api&P=0&w=237&h=159",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.l7-D_e5FFJpBYkSgTpd6qQHaE1&pid=Api&P=0&w=287&h=188",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.OWikxh8Qbwcu4kR7G4-6CQHaE7&pid=Api&P=0&w=238&h=159",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Junior Suite",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ],
+    "twinroom": [
+        {
+            "img1" : "https://tse4.mm.bing.net/th?id=OIP.uANMpK2Jnq778iPWjTG4NAHaE8&pid=Api&P=0&w=263&h=176",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true,
+            "shower" : true
+        },
+        {
+            "img1" : "https://tse2.mm.bing.net/th?id=OIP.dwJAouk6UVQ-N3TWv8tMkgHaE8&pid=Api&P=0&w=242&h=162",
+            "img2" : "https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        },
+        {
+            "img1" : "https://tse3.mm.bing.net/th?id=OIP.qKtA1DO_FzXg8kUg_J48-gHaE7&pid=Api&P=0&w=250&h=167",
+            "amount_per_night" : "$256/night",
+            "bed_size" : "Twin Room Size",
+            "double_bed" : true,
+            "jacuzzi" : true,
+            "bar" : true
+        }
+    ]
 }

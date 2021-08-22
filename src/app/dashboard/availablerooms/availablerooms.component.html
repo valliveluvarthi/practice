@@ -65,7 +65,7 @@
                 <div class="hidden-sm hidden-md hidden-lg visible-xs col-xs-12">
                     <div class="buttonrow wrap">
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'allrooms')" id="allrooms"
-                                class="btn btn-default firstbtn">All Rooms</button>
+                               class="btn btn-default firstbtn active">All Rooms</button>
                         </div>
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'deluxe')" id="deluxe"
                                 class="btn btn-default firstbtn">Deluxe</button></div>
@@ -88,7 +88,7 @@
                 <div class="hidden-xs hidden-md hidden-lg visible-sm col-sm-12">
                     <div class="buttonrow wrap">
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'allrooms')" id="allrooms"
-                                class="btn btn-default firstbtn">All Rooms</button>
+                                class="btn btn-default firstbtn active">All Rooms</button>
                         </div>
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'deluxe')" id="deluxe"
                                 class="btn btn-default firstbtn deluxe active">Deluxe</button></div>
@@ -111,7 +111,7 @@
                 <div class="hidden-xs hidden-sm hidden-lg visible-md col-md-12">
                     <div class="buttonrow wrap">
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'allrooms')" id="allrooms"
-                                class="btn btn-default firstbtn">All Rooms</button>
+                                class="btn btn-default firstbtn active">All Rooms</button>
                         </div>
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'deluxe')" id="deluxe"
                                 class="btn btn-default firstbtn deluxe active">Deluxe</button></div>
@@ -134,7 +134,7 @@
                 <div class="hidden-xs hidden-sm hidden-md visible-lg col-lg-12">
                     <div class="buttonrow wrap">
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'allrooms')" id="allrooms"
-                                class="btn btn-default firstbtn">All Rooms</button>
+                                class="btn btn-default firstbtn active">All Rooms</button>
                         </div>
                         <div class="flex-item"><button type="button" (click)="btnClick($event,'deluxe')" id="deluxe"
                                 class="btn btn-default firstbtn deluxe active">Deluxe</button></div>
@@ -156,41 +156,43 @@
                 </div>
             </div>
             <div class="scroll-div">
-                <div class="row list-rooms-row">
-                    <div class="room-list-div wrap">
-                        <div class="parent-image-div">
-                            <img class="img-rounded image1"
-                                src="https://tse4.mm.bing.net/th?id=OIP.8UM_fRahhVJbbwiO2ioMjgHaE8&pid=Api&P=0&w=269&h=180"
-                                alt="Luxury bed">
-                            <img class="img-rounded image2"
-                                src="https://images.vexels.com/media/users/3/127717/isolated/preview/a436d52393243d0fb8c4af42d29408c0-flipped-glossy-sale-tag-by-vexels.png"
-                                alt="Luxury bed">
-                        </div>
-                        <div class="room-details">
-                            <div class="room-details-text-div">
-                                <div class="money">&#36;256/night</div>
-                                <div class="bed-size">Luxury king Size</div>
-                                <div class="eminities">
-                                    <span>
-                                        <i class='bx bx-bed'></i>&nbsp;Double Bed
-                                        &nbsp;&nbsp;
-                                        <i class='bx bx-bath'></i>&nbsp;Jacuzzi
-                                        &nbsp;&nbsp;
-                                        <i class="fa fa-glass" aria-hidden="true"></i>&nbsp;Bar
-                                        &nbsp;&nbsp;
-                                        <i class="fa fa-shower" aria-hidden="true"></i>&nbsp;Shower
-                                    </span>
+                <ng-container *ngFor="let row of this.roomslist; let i = index;">
+                    <div class="row list-rooms-row">
+                        <div class="room-list-div wrap">
+                            <div class="parent-image-div">
+                                <img class="img-rounded image1"
+                                    src="{{row?.img1}}"
+                                    alt="Luxury bed">
+                                <img *ngIf = "row.img2" class="img-rounded image2"
+                                    src="{{row?.img2}}"
+                                    alt="Bed">
+                            </div>
+                            <div class="room-details">
+                                <div class="room-details-text-div">
+                                    <div class="money">&#36;{{row?.amount_per_night}}</div>
+                                    <div class="bed-size">{{row?.bed_size}}</div>
+                                    <div class="eminities">
+                                        <span>
+                                            <i *ngIf="row.double_bed" class='bx bx-bed'>&nbsp;Double Bed</i>
+                                            &nbsp;&nbsp;
+                                            <i *ngIf="row.jacuzzi" class='bx bx-bath'>&nbsp;Jacuzzi</i>
+                                            &nbsp;&nbsp;
+                                            <i *ngIf="row.bar" class="fa fa-glass" aria-hidden="true">&nbsp;Bar</i>
+                                            &nbsp;&nbsp;
+                                            <i *ngIf="row.shower" class="fa fa-shower" aria-hidden="true">&nbsp;Shower</i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="room-indetail">
-                            <div>Room Detail</div>
-                        </div>
-                        <div class="reserve-col">
-                            <button type="button" class="btn btn-primary">Make Reservation</button>
+                            <div class="room-indetail">
+                                <div>Room Detail</div>
+                            </div>
+                            <div class="reserve-col">
+                                <button type="button" class="btn btn-primary">Make Reservation</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </ng-container>
             </div>
         </div>
     </div>

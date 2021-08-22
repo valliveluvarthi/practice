@@ -7,23 +7,20 @@ import { DashboardService } from '../dashboard.service';
   styleUrls: ['./availablerooms.component.css']
 })
 export class AvailableroomsComponent implements OnInit {
+  roomslist: any;
 
   constructor(public dashboardService : DashboardService) { }
 
   ngOnInit(): void {
     this.dashboardService.getRoomDetails("allrooms").subscribe((result: any) => {
       console.log(result);
+      this.roomslist = result;
     });
   }
   btnClick(eve, id) {
-    if (id !== 'deluxe') {
-      var btn = document.getElementById('deluxe');
-      if(btn !== null){
-      btn.classList.remove("active");
-      }
       this.dashboardService.getRoomDetails(id).subscribe((result: any) => {
         console.log(result);
+        this.roomslist = result;
       });
-    }
   }
 }
