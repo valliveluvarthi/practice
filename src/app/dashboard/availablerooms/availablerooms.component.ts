@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 import { interval, Subscription } from 'rxjs';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-availablerooms',
@@ -13,7 +15,7 @@ export class AvailableroomsComponent implements OnInit {
   roomslist: any;
   allroomslist: any;
   perRoomslist: any;
-  constructor(public dashboardService: DashboardService) {
+  constructor(public dashboardService: DashboardService, public _snackBar : MatSnackBar) {
     this.mySubscription = interval(1000).subscribe((x => {
       this.applyFilter();
     }));
@@ -46,6 +48,11 @@ export class AvailableroomsComponent implements OnInit {
         this.roomslist = this.allroomslist;
       }
     }
+  }
+  makeReservation(){
+    this._snackBar.open("Reservation completed is successfully", "", {
+      duration: 2000,
+    });
   }
   ngDestroy(){
     this.mySubscription.unsubscribe();

@@ -156,6 +156,7 @@
         font-weight: bold;
         margin-left: 2rem;
         margin-top: 1rem;
+        cursor: pointer;
     }
     .reserve-col{
         padding: 0;
@@ -167,6 +168,7 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+        cursor: pointer;
     }
     .scroll-div{
         height: 60rem;
@@ -229,7 +231,8 @@
         font-weight: bold;
         margin-left: 2rem;
         margin-top: 0rem;
-        align-self: center
+        align-self: center;
+        cursor: pointer;
     }
     .flex-item {
         width: calc(100% / 3);
@@ -254,6 +257,7 @@
         font-weight: bold;
         margin-left: 2rem;
         align-self: center;
+        cursor: pointer;
     }
     .reserve-col {
         padding: 0;
@@ -421,6 +425,7 @@
         font-weight: bold;
         margin-left: 2rem;
         align-self: center;
+        cursor: pointer;
     }
     .reserve-col{
         padding: 0;
@@ -432,6 +437,7 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+        cursor: pointer;
     }
     .scroll-div{
         height: 60rem;
@@ -611,6 +617,7 @@
         font-weight: bold;
         margin-left: 2rem;
         align-self: center;
+        cursor: pointer;
     }
     .reserve-col{
         padding: 0;
@@ -622,6 +629,7 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+        cursor: pointer;
     }
     .scroll-div{
         height: 60rem;
@@ -783,6 +791,7 @@
         margin-left: 7rem;
         align-self: center;
         margin-right: 2rem;
+        cursor: pointer;
     }
     .reserve-col{
         padding: 0;
@@ -794,6 +803,7 @@
         background-color: #2779F4;
         border-color: #2779F4;
         border-radius: 2rem;
+        cursor: pointer;
     }
     .scroll-div{
         height: 60rem;
